@@ -1,0 +1,71 @@
+#champ_recherche {
+    background-color: rgb(109, 168, 184, 80%);
+    background-image: url(../images/table_ligne.png);
+    background-size: 310px;
+    height: 157px;
+    background-blend-mode: multiply
+}
+
+#recherche {
+    top: 25px;
+    background-color: #DDDDDD;
+    width: 600px;
+    height: 50px;
+}
+
+h2::before {
+    content: "____";
+}
+
+h2 {
+    color: #47B4D1;
+
+}
+
+svg {
+    height: 150px;
+}
+
+#categories img {
+    width: 12.5%;
+    height: 600px;
+}
+
+.down {
+    margin-top: 250px;
+}
+
+#veggie {
+    object-position: 82%;
+}
+
+#plats {
+    margin-left: 225px;
+    height: 260px;
+}
+
+#plats img {
+    width: 400px;
+    height: 240px;
+}
+
+#plat2 {
+    left: 425px;
+}
+
+#plat3 {
+    left: 625px;
+}
+
+#plat4 {
+    left: 825px;
+}
+
+#plat5 {
+    left: 1025px;
+}
+
+#plat6 {
+    left: 1225px;
+    z-index: -2;
+}

@@ -1,0 +1,338 @@
+/**Les différentes entête de lignes continues**/
+
+#entete_leg{
+    background-color: rgb(109, 168, 184, 80%);
+    height: 120px;
+    background-image: url(../images/legumes_ligne.png);
+    background-blend-mode: multiply;
+    background-size: 310px;
+}
+
+#entete_ass{
+    background-color: rgb(109, 168, 184, 80%);
+    background-image: url(../images/assiette_ligne.png);
+    height: 180px;
+    background-size: 310px;
+    background-blend-mode: multiply;
+}
+
+#entete_tab{
+    background-color: rgb(109, 168, 184, 80%);
+    background-image: url(../images/table_ligne.png);
+    height: 160px;
+    background-size: 310px;
+    background-blend-mode: multiply;
+}
+
+/**Catégories de la page catégorie.html**/
+
+.photo_cat{
+    width: 75%;
+    height: 200px;
+}
+
+.texte_cat{
+    font-size: 70px;
+    width: 25%;
+}
+
+
+.categorie_l{
+    background-color: rgb(71, 180, 209, 60%);
+}
+
+#asiatique{
+    font-family: "Geostar Fill";
+}
+
+#asiatique img{
+    object-position: 100% 70%;
+}
+
+#pates{
+    font-family: "Love Light";
+}
+
+#pates img{
+    object-position: 100% 70%;
+}
+
+#salade{
+    font-family: "Mina";
+}
+
+#salade img{
+    object-position: 100% 55%;
+}
+
+#veggie{
+    font-family: "Norican";
+}
+
+#veggie img{
+    object-position: 100% 68%;
+}
+
+.categorie_r{
+    background-color: rgb(0,0,0,60%);
+    color: #47B4D1;
+}
+
+#burger{
+    font-family: "Graduate";
+}
+
+#pizza{
+    font-family: "Griffy";
+}
+
+#pizza img{
+    object-position: 100% 40%;
+}
+
+#sandwich{
+    font-family: "Indie Flower";
+}
+
+#sandwich img{
+    object-position: 100% 10%;
+}
+
+#wrap{
+    font-family: "Nothing You Could Do";
+}
+
+#wrap img{
+    object-position: 100% 55%;
+}
+
+/**Plat des pages plats(n).html**/
+
+.plat{
+    background-color: rgb(47,47,47,50%);
+    width: 50%;
+    height: 300px;
+    box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%)
+}
+
+.plat img{
+    height: 300px;
+    width: 300px;
+}
+
+.titre_plat{
+    font-size: 70px;
+    font-family: "Modern Antiqua";
+}
+
+.plat i{
+    font-size: 50px;
+}
+
+.description{
+    height: 100%;
+    font-family: "Farsan";
+}
+
+.commander{
+    background-color: #47B4D1;
+    font-family: "Julius Sans One";
+    font-size: 50px;
+}
+
+.des_com{
+    height: 70%;
+}
+
+/**Boutons suivant et précédent des pages plats(n).html**/
+
+#boutons button{
+    background-color: #47B4D1;
+    font-family: "Julius Sans One";
+    font-size: 50px;
+    margin-top: 50px;
+    width: 30%;
+}
+
+/**Modif image de la page plats1.html**/
+
+#cheeseburger{
+    object-position: 100%;
+}
+
+/**Modif image de la page plats2.html*/
+
+#spa_leg{
+    object-position: 0%;
+}
+
+#margherita{
+    object-position: 25%;
+}
+
+/**Modif image de la page plats4.html**/
+
+#courgettes{
+    width: 450px;
+}
+
+#tarte{
+    object-position: 85%;
+}
+
+/**Entête des pages plats par catégorie**/
+
+h1{
+    color: #47B4D1;
+    -webkit-text-stroke: 5px black;
+    font-size: 250px;
+}
+
+/**Entête de la page burger.html**/
+
+#entete_burger{
+    background-image: url(../images/category/burger_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%;
+}
+
+/**Entête de la page pates.html**/
+
+#entete_pates{
+    background-image: url(../images/category/pasta_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%;
+}
+/**Entête de la page pizza.html**/
+
+#entete_pizza{
+    background-image: url(../images/category/pizza_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%;
+}
+
+/**Entête de la page salade.html**/
+
+#entete_salade{
+    background-image: url(../images/category/salade_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%; 
+}
+
+/**Entête de la page sandwich.html**/
+
+#entete_sandwich{
+    background-image: url(../images/category/sandwich_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%; 
+}
+
+/**Entête de la page veggie.html**/
+
+#entete_veggie{
+    background-image: url(../images/category/veggie_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%; 
+}
+
+/**Entête de la page wrap.html**/
+
+#entete_wrap{
+    background-image: url(../images/category/wrap_cat.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    filter: blur(5px);
+    width: 100%; 
+}
+
+/**Page contact.html**/
+
+#contact{
+    top: 165px;
+    font-family: "Gwendolyn";
+    font-size: 200px;
+}
+
+form{
+    margin-top: 200px;
+}
+
+form div{
+    width: 45%;
+    background-color: #E2E2E2;
+    height: 100px;
+}
+
+div:has(+input){
+    width: 95%;
+    height: 300px;
+}
+
+svg{
+    height: 350px;
+    width: 600px;
+}
+
+#bouton{
+    width: 12%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 34%);
+}
+
+::placeholder{
+    color: rgba(255,0,0,50%);
+}
+
+label, input{
+    font-family: "Julius Sans One";
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+textarea{
+    outline: none;
+    width: 98%;
+    height: 100%;
+    resize: none;
+    background: radial-gradient(rgba(0,0,0,20%), rgba(0,0,0,5%), rgba(0,0,0,0%));
+}
+
+
+/**Page commande.html**/
+
+#commande{
+    background-image: url(../images/ibg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x:;
+}

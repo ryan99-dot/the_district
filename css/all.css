@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(#D1D1D1, #9A9A9A, rgb(0, 0, 0, 50%));
+}
+
+nav {
+    background-color: #47B4D1;
+}
+
+nav img {
+    height: 145px;
+}
+
+li {
+    width: 25%;
+    height: 130px;
+}
+
+li a {
+    font-family: "Julius Sans One";
+    -webkit-text-stroke: 0.5px black;
+}
+
+#separation_leg {
+    background-image: url(../images/legumes_ligne.png);
+    height: 105px;
+    background-size: 310px;
+    mix-blend-mode: multiply;
+}
+
+#separation_ass {
+    background-image: url(../images/assiette_ligne.png);
+    height: 200px;
+    background-size: 310px;
+    mix-blend-mode: multiply;
+}
+
+#separation_tab{
+    background-image: url(../images/table_ligne.png);
+    height: 180px;
+    background-size: 310px;
+    background-blend-mode: multiply;
+}
+
+footer i {
+    font-size: 60px;
+    height: 80px;
+    width: 80px;
+    background-image: url(../images/the_district_brand/instagram_profile_image.png);
+    background-size: 75px;
+    color: rgba(0, 0, 0, 70%);
+}
