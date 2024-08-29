@@ -7,12 +7,14 @@
     <title>Commande - The District</title>
     <script src="https://kit.fontawesome.com/694d251a11.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="../css/all.css">
-<link rel="stylesheet" href="../css/pages.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Farsan&family=Gwendolyn:wght@400;700&family=Julius+Sans+One&family=Mina:wght@400;700&family=Modern+Antiqua&display=swap" rel="stylesheet">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Farsan&family=Gwendolyn:wght@400;700&family=Julius+Sans+One&family=Mina:wght@400;700&family=Modern+Antiqua&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -30,69 +32,86 @@
                     <a href="plats1.html" class="nav-link text-dark fs-3">Plats</a>
                 </li>
                 <li class="nav-item d-flex justify-content-center align-items-center">
-                    <a href="#" class="nav-link text-white text-decoration-underline fs-3">Contact</a>
+                    <a href="contact.html" class="nav-link text-dark fs-3">Contact</a>
                 </li>
             </ul>
-            <img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu">
+            <a href="#"><img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu"></a>
         </nav>
         <div id="entete_tab"></div>
     </header>
-    <form id="commande" method="get">
-        <div>
-            <img src="" alt="">
-            <div>
-                <p></p>
-                <p></p>
+    <form id="commande" method="get" class="d-flex flex-wrap justify-content-around mt-5">
+        <div class="plats_commande d-flex m-5 rounded-pill">
+            <img src="../images/food/big_burger.jpeg" alt="Big Burger" class="rounded-circle object-fit-cover">
+            <div class="recap_com d-flex flex-column justify-content-between bg-transparent">
+                <div class=" titre_des bg-transparent d-flex justify-content-between align-items-center">
+                    <p class="titre_plat text-white text-center">Big burger</p>
+                    <p class="description text-white text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate,
+                        oignons cuits et mayonnaise</p>
+                </div>
+                <div class="qt_plat d-flex align-items-center justify-content-between rounded-5 ps-5 mb-3">
+                    <label for="quantite" class="fs-1">Quantité</label>
+                    <div class="bg-transparent">
+                    <button class="border-0 bg-transparent fs-1 me-5">-</button>
+                    <input type="number" id="quantite" value="1" class="bg-transparent border-0 fs-1 mx-5 text-center">
+                    <button class="border-0 bg-transparent fs-1 ms-5">+</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="quantite">Quantité</label>
-                <button>-</button>
-                <input type="number" id="quantite" value="1">
-                <button>+</button>
-            </div>
         </div>
-        <div>
-            <label for="prenom">Prénom</label>
-            <input type="text" id="prenom" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5">
+            <label for="prenom" class="mx-5 fs-2">Prénom</label>
+            <input type="text" id="prenom" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5">
+            <label for="nom" class="mx-5 fs-2">Nom</label>
+            <input type="text" id="nom" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5">
+            <label for="email" class="mx-5 fs-2">Email</label>
+            <input type="text" id="email" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="telephone">Téléphone</label>
-            <input type="text" id="telephone" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5">
+            <label for="telephone" class="mx-5 fs-2">Téléphone</label>
+            <input type="text" id="telephone" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="numero">N°</label>
-            <input type="text" id="numero" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5" id="champ_num">
+            <label for="numero" class="mx-5 fs-2">N°</label>
+            <input type="text" id="numero" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="rue">Rue</label>
-            <input type="text" id="rue" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5" id="champ_rue">
+            <label for="rue" class="mx-5 fs-2">Rue</label>
+            <input type="text" id="rue" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="code_postal">Code postal</label>
-            <input type="text" id="code_postal" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5" id="champ_cp">
+            <label for="code_postal" class="mx-5 fs-2">Code postal</label>
+            <input type="text" id="code_postal" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <div>
-            <label for="ville">Ville</label>
-            <input type="text" id="ville" placeholder="Champ obligatoire">
+        <div class="rounded-pill d-flex align-items-center mb-5" id="champ_ville">
+            <label for="ville" class="mx-5 fs-2">Ville</label>
+            <input type="text" id="ville" placeholder="Champ obligatoire"
+                class="bg-transparent border-0 border-start border-dark px-4 fs-4">
         </div>
-        <input type="submit" value="Envoyer">
-        </div>
+        <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4 my-5">
     </form>
-    <img src="../images/table_ligne.png" alt="Ligne continue de tables">
-    <footer>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-youtube"></i>
+    <div id="separation_tab"></div>
+    <footer class="d-flex justify-content-center">
+        <a href="#" class="text-decoration-none"><i
+                class="fa-brands fa-facebook-f me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
+        <a href="#" class="text-decoration-none"><i
+                class="fa-brands fa-instagram me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
+        <a href="#" class="text-decoration-none"><i
+                class="fa-brands fa-linkedin-in me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
+        <a href="#" class="text-decoration-none"><i
+                class="fa-brands fa-pinterest-p me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
+        <a href="#" class="text-decoration-none"><i
+                class="fa-brands fa-youtube rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
     </footer>
 </body>
 

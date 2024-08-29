@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Graduate&family=Griffy&family=Indie+Flower&family=Julius+Sans+One&family=Love+Light&family=Mina:wght@400;700&family=Norican&family=Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +35,7 @@
                     <a href="html/contact.html" class="nav-link text-dark fs-3">Contact</a>
                 </li>
             </ul>
-            <img id="img_nav" src="images/bg_rd.png" alt="Plusieurs plats sur fond bleu">
+            <a href="html/commande.html"><img id="img_nav" src="images/bg_rd.png" alt="Plusieurs plats sur fond bleu"></a>
         </nav>
         <div id="champ_recherche" class="d-flex justify-content-center align-items-end">
             <label for="recherche"></label>
@@ -53,15 +55,16 @@
             </defs>
             <ellipse cx="100" cy="50" rx="200" ry="35" fill="url('#monDegrade')" />
         </svg>
-        <div id="categories" class="d-flex ">
-            <img src="images/category/asian_food_cat.jpg" alt="Asiatique" class="object-fit-cover">
-            <img src="images/category/burger_cat.jpg" alt="Burger" class="down object-fit-cover">
-            <img src="images/category/pasta_cat.jpg" alt="Pâtes" class="object-fit-cover">
-            <img src="images/category/pizza_cat.jpg" alt="Pizza" class="down object-fit-cover">
-            <img src="images/category/salade_cat.jpg" alt="Salade" class="object-fit-cover">
-            <img src="images/category/sandwich_cat.jpg" alt="Sandwich" class="down object-fit-cover">
-            <img src="images/category/veggie_cat.jpg" alt="Veggie" id="veggie" class="object-fit-cover">
-            <img src="images/category/wrap_cat.jpg" alt="Wrap" class="down object-fit-cover">
+        <div id="categories" class="d-flex">
+            <!--<a href="#" class="up"><img src="images/category/asian_food_cat.jpg" alt="Asiatique" class="object-fit-cover"></a>-->
+            <a href="#" class="up" id="asiatique"><p class="d-flex align-items-center justify-content-center fs-3">Asiatique</p></a>
+            <a href="html/burger.html" class="down" id="burger"><p class="d-flex align-items-center justify-content-center fs-1">Burger</p></a>
+            <a href="html/pates.html" class="up" id="pates"><p class="d-flex align-items-center justify-content-center fs-1">Pâtes</p></a>
+            <a href="html/pizza.html" class="down" id="pizza"><p class="d-flex align-items-center justify-content-center fs-1">Pizza</p></a>
+            <a href="html/salade.html" class="up" id="salade"><p class="d-flex align-items-center justify-content-center fs-1">Salade</p></a>
+            <a href="html/sandwich.html" class="down" id="sandwich"><p class="d-flex align-items-center justify-content-center fs-1">Sandwich</p></a>
+            <a href="html/veggie.html" class="up" id="veggie"><p class="d-flex align-items-center justify-content-center fs-1">Veggie</p></a>
+            <a href="html/wrap.html" class="down" id="wrap"><p class="d-flex align-items-center justify-content-center fs-1">Wrap</p></a>
         </div>
     </section>
     <div id="separation_leg" class="my-5"></div>
@@ -78,18 +81,18 @@
             <ellipse cx="100" cy="50" rx="200" ry="35" fill="url('#monDegrade')" />
         </svg>
         <div id="plats" class="my-1">
-            <img src="images/food/pizza_margherita.jpg" alt="Pizza marhgerita"
-                class="rounded-4 object-fit-cover position-absolute z-3">
-            <img src="images/food/bacon_cheeseburger.jpg" alt="Hamburger"
-                class="rounded-4 object-fit-cover position-absolute z-2" id="plat2">
-            <img src="images/food/spaghetti_legumes.jpg" alt="Spaghetti aux légumes"
-                class="rounded-4 object-fit-cover position-absolute z-1" id="plat3">
-            <img src="images/food/tarte_veggie.jpg" alt="Tarte veggie"
-                class="rounded-4 object-fit-cover position-absolute z-0" id="plat4">
-            <img src="images/food/lasagnes_viande.jpg" alt="Lasagnes"
-                class="rounded-4 object-fit-cover position-absolute z-n1" id="plat5">
-            <img src="images/food/wrap_caesar.jpg" alt="Wrap Ceasar"
-                class="rounded-4 object-fit-cover position-absolute z-n2" id="plat6">
+            <a href="html/plats2.html#margherita"><img src="images/food/pizza_margherita.jpg" alt="Pizza marhgerita"
+                class="rounded-4 object-fit-cover position-absolute" id="plat1"></a>
+            <a href="html/plats1.html#bacon_cheeseburger"><img src="images/food/bacon_cheeseburger.jpg" alt="Hamburger"
+                class="rounded-4 object-fit-cover position-absolute" id="plat2"></a>
+            <a href="html/plats2.html#spa_leg"><img src="images/food/spaghetti_legumes.jpg" alt="Spaghetti aux légumes"
+                class="rounded-4 object-fit-cover position-absolute" id="plat3"></a>
+            <a href="html/plats4.html#tarte"><img src="images/food/tarte_veggie.jpg" alt="Tarte veggie"
+                class="rounded-4 object-fit-cover position-absolute" id="plat4"></a>
+            <a href="html/plats2.html#lasagnes"><img src="images/food/lasagnes_viande.jpg" alt="Lasagnes"
+                class="rounded-4 object-fit-cover position-absolute" id="plat5"></a>
+            <a href="html/plats5.html#wrap_caesar"><img src="images/food/wrap_caesar.jpg" alt="Wrap Ceasar"
+                class="rounded-4 object-fit-cover position-absolute" id="plat6"></a>
         </div>
     </section>
     <div id="separation_ass"></div>

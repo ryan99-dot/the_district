@@ -22,22 +22,22 @@ li a {
 
 #separation_leg {
     background-image: url(../images/legumes_ligne.png);
-    height: 105px;
-    background-size: 310px;
+    height: 110px;
+    background-size: 340px;
     mix-blend-mode: multiply;
 }
 
 #separation_ass {
     background-image: url(../images/assiette_ligne.png);
     height: 200px;
-    background-size: 310px;
+    background-size: 340px;
     mix-blend-mode: multiply;
 }
 
 #separation_tab{
     background-image: url(../images/table_ligne.png);
     height: 180px;
-    background-size: 310px;
+    background-size: 340px;
     background-blend-mode: multiply;
 }
 
@@ -48,4 +48,33 @@ footer i {
     background-image: url(../images/the_district_brand/instagram_profile_image.png);
     background-size: 75px;
     color: rgba(0, 0, 0, 70%);
+}
+
+#asiatique{
+    font-family: "Geostar Fill";
+}
+
+#pates{
+    font-family: "Love Light";
+}
+
+#salade{
+    font-family: "Mina";
+}
+
+#veggie{
+    font-family: "Norican";
+}
+#burger{
+    font-family: "Graduate";
+}
+
+#pizza{
+    font-family: "Griffy";
+}
+#sandwich{
+    font-family: "Indie Flower";
+}
+#wrap{
+    font-family: "Nothing You Could Do";
 }

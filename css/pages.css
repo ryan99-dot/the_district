@@ -5,22 +5,22 @@
     height: 120px;
     background-image: url(../images/legumes_ligne.png);
     background-blend-mode: multiply;
-    background-size: 310px;
+    background-size: 340px;
 }
 
 #entete_ass{
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/assiette_ligne.png);
     height: 180px;
-    background-size: 310px;
+    background-size: 340px;
     background-blend-mode: multiply;
 }
 
 #entete_tab{
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/table_ligne.png);
-    height: 160px;
-    background-size: 310px;
+    height: 170px;
+    background-size: 340px;
     background-blend-mode: multiply;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .texte_cat{
-    font-size: 70px;
+    font-size: 65px;
     width: 25%;
 }
 
@@ -41,33 +41,29 @@
     background-color: rgb(71, 180, 209, 60%);
 }
 
-#asiatique{
-    font-family: "Geostar Fill";
+.categorie_l:hover{
+    transform: scale(1.1);
 }
 
 #asiatique img{
     object-position: 100% 70%;
 }
 
-#pates{
-    font-family: "Love Light";
+#asiatique p{
+    font-size: 45px;
 }
+
 
 #pates img{
     object-position: 100% 70%;
 }
 
-#salade{
-    font-family: "Mina";
-}
 
 #salade img{
     object-position: 100% 55%;
 }
 
-#veggie{
-    font-family: "Norican";
-}
+
 
 #veggie img{
     object-position: 100% 68%;
@@ -78,29 +74,21 @@
     color: #47B4D1;
 }
 
-#burger{
-    font-family: "Graduate";
+.categorie_r:hover{
+    transform: scale(1.1);
 }
 
-#pizza{
-    font-family: "Griffy";
-}
 
 #pizza img{
     object-position: 100% 40%;
 }
 
-#sandwich{
-    font-family: "Indie Flower";
-}
+
 
 #sandwich img{
     object-position: 100% 10%;
 }
 
-#wrap{
-    font-family: "Nothing You Could Do";
-}
 
 #wrap img{
     object-position: 100% 55%;
@@ -289,7 +277,7 @@ form div{
     height: 100px;
 }
 
-div:has(+input){
+#last{
     width: 95%;
     height: 300px;
 }
@@ -331,8 +319,65 @@ textarea{
 /**Page commande.html**/
 
 #commande{
-    background-image: url(../images/ibg.jpg);
+    background-image: url(../images/ibg_rd.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-x:;
+}
+
+.plats_commande{
+    width: 100%;
+    background-color: rgb(47,47,47,50%);
+    height: 300px;
+    box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%)
+}
+
+.plats_commande img{
+    height: 300px;
+    width: 300px;
+}
+
+#champ_num{
+    width: 25%;
+}
+
+#champ_rue{
+    width: 65%;
+}
+
+#champ_cp{
+    width: 30%;
+}
+
+#champ_ville{
+    width: 60%;
+}
+
+.recap_com{
+    height: 100%;
+    width: 72%;
+    margin-left: 100px;
+}
+
+.titre_des{
+    height: 50%;
+    width: 100%;
+}
+
+.titre_des .description{
+    height: auto;
+}
+
+.qt_plat{
+    width: 100%;
+    font-family: "Julius Sans One";
+    background: radial-gradient(#47B4D1,#47b3d1c9, #47b3d173);
+}
+
+input[type=number]{
+    appearance: textfield;
+    width: 20px;
+}
+
+#quantite{
+    width: 100px;
 }

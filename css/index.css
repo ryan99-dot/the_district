@@ -1,8 +1,8 @@
 #champ_recherche {
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/table_ligne.png);
-    background-size: 310px;
-    height: 157px;
+    background-size: 340px;
+    height: 170px;
     background-blend-mode: multiply
 }
 
@@ -26,9 +26,84 @@ svg {
     height: 150px;
 }
 
+#categories a{
+width: 12.5%;
+text-decoration: none;
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+}
+
+#asiatique{
+    background-image: url(../images/category/asian_food_cat.jpg);
+    background-position-x: 42%;
+    font-family: "Geostar Fill" ;
+}
+
+#burger{
+    background-image: url(../images/category/burger_cat.jpg);
+    background-position-x: 50%;
+}
+
+#pates{
+    background-image: url(../images/category/pasta_cat.jpg);
+    background-position-x: 55%;
+}
+
+#pizza{
+    background-image: url(../images/category/pizza_cat.jpg);
+}
+
+#salade{
+    background-image: url(../images/category/salade_cat.jpg);
+    background-position-x: 55%;
+}
+
+#sandwich{
+    background-image: url(../images/category/sandwich_cat.jpg);
+    background-position-x: 55%;
+}
+
+#veggie{
+    background-image: url(../images/category/veggie_cat.jpg);
+    background-position-x: 80%;
+}
+
+#wrap{
+    background-image: url(../images/category/wrap_cat.jpg);
+    background-position-x: 15%;
+}
+
+
+#categories a:hover{
+    transform: scale(1.2);
+    filter: grayscale(60%);
+}
+
+#categories p{
+    height: 100%;
+    width: 100%;
+    color: transparent;
+}
+
+#categories p:hover{
+    color: #47B4D1;
+    -webkit-text-stroke: 0.8px black;
+}
+
+
+
 #categories img {
-    width: 12.5%;
+    width: 100%;
     height: 600px;
+}
+
+#categories img:hover{
+    transform: scale(1.2);
+}
+
+.up{
+    margin-bottom: 250px;
 }
 
 .down {
@@ -40,7 +115,7 @@ svg {
 }
 
 #plats {
-    margin-left: 225px;
+    margin-left: 165px;
     height: 260px;
 }
 
@@ -49,23 +124,36 @@ svg {
     height: 240px;
 }
 
+#plats img:hover{
+    transform: scale(1.2);
+    z-index: 7;
+}
+
+#plat1{
+    z-index: 6;
+}
+
 #plat2 {
-    left: 425px;
+    left: 365px;
+    z-index: 5;
 }
 
 #plat3 {
-    left: 625px;
+    left: 565px;
+    z-index: 4;
 }
 
 #plat4 {
-    left: 825px;
+    left: 765px;
+    z-index: 3;
 }
 
 #plat5 {
-    left: 1025px;
+    left: 965px;
+    z-index: 2;
 }
 
 #plat6 {
-    left: 1225px;
-    z-index: -2;
+    left: 1165px;
+    z-index: 1;
 }
