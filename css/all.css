@@ -10,6 +10,18 @@ nav img {
     height: 145px;
 }
 
+nav i{
+    font-size: 60px;
+}
+
+#logo_mobile{
+    display: none;
+}
+
+nav button{
+    display: none;
+}
+
 li {
     width: 25%;
     height: 130px;
@@ -41,13 +53,18 @@ li a {
     background-blend-mode: multiply;
 }
 
+footer{
+    display: flex;
+}
+
 footer i {
     font-size: 60px;
     height: 80px;
     width: 80px;
-    background-image: url(../images/the_district_brand/instagram_profile_image.png);
+    background-image:url(../images/the_district_brand/instagram_profile_image.png);
     background-size: 75px;
     color: rgba(0, 0, 0, 70%);
+    background-blend-mode: difference;
 }
 
 #asiatique{
@@ -77,4 +94,59 @@ footer i {
 }
 #wrap{
     font-family: "Nothing You Could Do";
+}
+
+
+
+
+/**Media queries**/
+
+@media screen and (max-width:767px) {
+    #logo_desktop{
+        display: none;
+    }
+
+    #logo_mobile{
+        display: block;
+    }
+
+    #img_nav{
+        display: none;
+    }
+
+    nav{
+        background: linear-gradient(0.25turn, #970747 0% 40%, black);
+    }
+
+    nav button{
+        display: block;
+    }
+
+    .navbar-nav{
+        display: none;
+    }
+
+    #banniere_mobile{
+        background-image: url(../images/fosyyyy.jpg);
+        height: 120px;
+        background-size: 100%;
+        background-position-y: 80%;
+    }
+
+    #separation_leg {
+display: none;
+    }
+    
+    #separation_ass {
+display: none;
+    }
+    
+    #separation_tab{
+display: none;
+    }
+
+    footer{
+        display: none;
+    }
+
 }

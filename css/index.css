@@ -1,4 +1,5 @@
 #champ_recherche {
+    display: flex;
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/table_ligne.png);
     background-size: 340px;
@@ -41,7 +42,7 @@ height: 600px;
 }
 
 #burger{
-    background-image: url(../images/category/burger_cat.jpg);
+    background-image:url(../images/category/burger_cat.jpg);
     background-position-x: 50%;
 }
 
@@ -156,4 +157,31 @@ height: 600px;
 #plat6 {
     left: 1165px;
     z-index: 1;
+}
+
+/**Media queries**/
+
+@media screen and (max-width:767px){
+
+    #champ_recherche{
+        display: none;
+    }
+
+    svg{
+        display: none;
+    }
+
+    #categories{
+        flex-direction: column;
+    }
+
+    #categories{
+        margin-top: 15px;
+    }
+
+    #categories a{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
 }
