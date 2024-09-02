@@ -131,6 +131,7 @@ footer i {
         height: 120px;
         background-size: 100%;
         background-position-y: 80%;
+        background-repeat: no-repeat;
     }
 
     #separation_leg {

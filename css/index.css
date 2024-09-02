@@ -20,6 +20,7 @@ h2::before {
 
 h2 {
     color: #47B4D1;
+    position: absolute;
 
 }
 
@@ -28,10 +29,10 @@ svg {
 }
 
 #categories a{
-width: 12.5%;
 text-decoration: none;
 background-repeat: no-repeat;
 background-size: cover;
+width: 12.5%;
 height: 600px;
 }
 
@@ -82,6 +83,7 @@ height: 600px;
 }
 
 #categories p{
+    display: flex;
     height: 100%;
     width: 100%;
     color: transparent;
@@ -91,7 +93,6 @@ height: 600px;
     color: #47B4D1;
     -webkit-text-stroke: 0.8px black;
 }
-
 
 
 #categories img {
@@ -123,6 +124,7 @@ height: 600px;
 #plats img {
     width: 400px;
     height: 240px;
+    position: absolute;
 }
 
 #plats img:hover{
@@ -132,31 +134,37 @@ height: 600px;
 
 #plat1{
     z-index: 6;
+    border-radius: 20px;
 }
 
 #plat2 {
     left: 365px;
     z-index: 5;
+    border-radius: 20px;
 }
 
 #plat3 {
     left: 565px;
     z-index: 4;
+    border-radius: 20px;
 }
 
 #plat4 {
     left: 765px;
     z-index: 3;
+    border-radius: 20px;
 }
 
 #plat5 {
     left: 965px;
     z-index: 2;
+    border-radius: 20px;
 }
 
 #plat6 {
     left: 1165px;
     z-index: 1;
+    border-radius: 20px;
 }
 
 /**Media queries**/
@@ -172,16 +180,76 @@ height: 600px;
     }
 
     #categories{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     #categories{
         margin-top: 15px;
+
     }
 
     #categories a{
+        margin: 0;
+        width: 25%;
+        height: 300px;
+    }
+
+    h2{
+        position: relative;
+        color: #970747;
+        font-family: "Dekko";
+        font-size: 50px;
+    }
+
+    #titre_cat::before, #titre_cat::after{
+        content: "______";
+        color: black;
+    }
+
+    #titre_plat::before, #titre_plat::after{
+        content: "_____";
+        color: black;
+    }
+
+    #plats img{
+        position: relative;
+        left: 0;
         width: 100%;
-        height: 200px;
+    }
+
+    #plats{
+        display: flex;
+        flex-direction: column;
         margin: 0;
     }
+
+    #plat1{
+        border-radius: 20px 20px 0 0;
+    }
+
+    #plat2{
+        border-radius: 0;
+    }
+
+    #plat3{
+        border-radius: 0;
+    }
+
+    #plat4{
+        border-radius: 0;
+    }
+
+    #plat5{
+        border-radius: 0;
+    }
+
+    #plat6{
+        border-radius: 0 0 20px 20px;
+    }
+
+    #categories p{
+        display: none;
+    }
+
+    
 }

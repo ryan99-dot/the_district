@@ -381,3 +381,22 @@ input[type=number]{
 #quantite{
     width: 100px;
 }
+
+
+/**Media queries**/
+
+@media screen and (max-width:767px){
+
+
+#entete_ass{
+    display: none;
+}
+
+#entete_leg{
+    display: none;
+}
+
+#entete_tab{
+    display: none;
+}
+}
