@@ -39,10 +39,15 @@
 
 .categorie_l{
     background-color: rgb(71, 180, 209, 60%);
+    color: black;
 }
 
 .categorie_l:hover{
     transform: scale(1.1);
+}
+
+.categorie_l img{
+    border-radius: 0 20px 20px 0;
 }
 
 #asiatique img{
@@ -78,6 +83,10 @@
     transform: scale(1.1);
 }
 
+.categorie_r img{
+    border-radius: 20px 0 0 20px;
+}
+
 
 #pizza img{
     object-position: 100% 40%;
@@ -100,17 +109,21 @@
     background-color: rgb(47,47,47,50%);
     width: 50%;
     height: 300px;
-    box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%)
+    box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%);
+    margin: 48px;
+    border-radius: 50rem ;
 }
 
 .plat img{
     height: 300px;
     width: 300px;
+    border-radius: 50%;
 }
 
 .titre_plat{
     font-size: 70px;
     font-family: "Modern Antiqua";
+    color: white;
 }
 
 .plat i{
@@ -120,6 +133,13 @@
 .description{
     height: 100%;
     font-family: "Farsan";
+    color: white;
+}
+
+.tout{
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
 }
 
 .commander{
@@ -128,8 +148,17 @@
     font-size: 50px;
 }
 
+.commander_mobile{
+    display: none;
+}
+
 .des_com{
     height: 70%;
+    display: flex;
+    display: none;
+}
+hr{
+    display: none;
 }
 
 /**Boutons suivant et précédent des pages plats(n).html**/
@@ -388,15 +417,119 @@ input[type=number]{
 @media screen and (max-width:767px){
 
 
-#entete_ass{
+#entete_ass, #entete_leg, #entete_tab{
     display: none;
 }
 
-#entete_leg{
-    display: none;
+.categorie_l, .categorie_r{
+    background: transparent;
+    color: #970747;
+    -webkit-text-stroke: 2px black;
+    align-items: center;
 }
 
-#entete_tab{
-    display: none;
+.categorie_l img, .categorie_r img{
+    width: 100%;
+    filter: blur(3px);
+    border-radius: 0;
 }
+
+.categorie_l p, .categorie_r p{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: auto;
+    right: auto;
+    }
+
+    h1{
+        font-size: 100px;
+        color: #970747;
+        -webkit-text-stroke: 2px black;
+    }
+
+    #entete_burger, #entete_pates, #entete_pizza, #entete_salade, #entete_sandwich, #entete_veggie, #entete_wrap{
+        height: 200px;
+    }
+
+    .plat{
+        margin: 48px 0 0 0;
+        border-radius: 20px;
+        width: 100%;
+        background-color: #ffffff81;
+    }
+
+    .chevron{
+        display: none;
+    }
+
+    .des_com{
+        display: flex;
+            height: 75%;
+            justify-content: space-between;
+
+    }
+
+    .plat img{
+        border-radius: 20px 0 0 20px;
+        width: 50%;
+    }
+
+    .plat a {
+        text-decoration: none;
+    }
+
+    .titre_plat{
+        font-size: 35px;
+        height: 25%;
+        margin: 0;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 35px;
+        -webkit-text-stroke: 1px #970747;
+    }
+
+    .commander{
+        display: none;
+    }
+
+    .commander_mobile{
+        display: flex;
+        background-color: #970747;
+        font-family: "Modern Antiqua";
+        margin-left: 200px;
+        margin-bottom: 5px;
+        font-size: 45px;
+        width: 45px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tout{
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        margin: 0;
+        width: 50%;
+    }
+
+    .description{
+        height: auto;
+        color: black;
+    }
+
+    hr{
+        display: block;
+        color: #970747;
+        margin: 0;
+        border: 2px solid #970747;
+        opacity: 100%;
+    }
+
+    #courgettes{
+        width: 50%;
+    }
 }

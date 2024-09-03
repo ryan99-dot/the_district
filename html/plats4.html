@@ -18,8 +18,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg sticky-top d-flex justify-content-between p-0 shadow">
-            <img src="../images/the_district_brand/logo_transparent.png" alt="Logo The District">
-            <ul class="navbar-nav col d-flex justify-content-around">
+            <img src="../images/the_district_brand/logo_transparent.png" alt="Logo The District" id="logo_desktop">
+            <img src="../images/the_district_brand/logo.png" alt="Logo The District" id="logo_mobile">
+            <ul class="navbar-nav col justify-content-around">
                 <li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
                     <a href="../index.html" class="nav-link text-dark fs-3">Accueil</a>
                 </li>
@@ -27,62 +28,82 @@
                     <a href="categorie.html" class="nav-link text-dark fs-3">Catégorie</a>
                 </li>
                 <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
-                    <a href="plats1.html" class="nav-link text-white text-decoration-underline fs-3">Plats</a>
+                    <a href="#" class="nav-link text-white text-decoration-underline fs-3">Plats</a>
                 </li>
                 <li class="nav-item d-flex justify-content-center align-items-center">
                     <a href="contact.html" class="nav-link text-dark fs-3">Contact</a>
                 </li>
             </ul>
             <a href="commande.html"><img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu"></a>
+            <button class="border-0 bg-transparent"><i class="fa-solid fa-bars text-white me-2"></i></button>
         </nav>
         <div id="entete_ass"></div>
+        <div id="banniere_mobile"></div>
     </header>
-    <div class="plat d-flex align-items-center m-5 rounded-pill justify-content-between">
-        <img src="../images/food/grilled_cheese.jpg" alt="Grilled cheese" class="rounded-circle object-fit-cover">
-        <p class="titre_plat text-white text-center">Grilled cheese</p>
-        <button class="border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="des_com d-flex flex-column align-items-center d-none">
-            <p class="description text-white text-center fs2">Pain de mie toasté, fromages et moutarde américaine</p>
-            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button></a>
+    <div class="plat d-flex align-items-center justify-content-between">
+        <img src="../images/food/grilled_cheese.jpg" alt="Grilled cheese" class="object-fit-cover">
+        <div class="tout d-flex">
+            <p class="titre_plat text-center">Grilled cheese</p>
+            <hr class="shadow">
+            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="des_com flex-column align-items-center">
+                <p class="description text-center fs-2">Pain de mie toasté, fromages et moutarde américaine</p>
+                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                    <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+            </div>
         </div>
-        <button class="border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
-    <div class="plat d-flex align-items-center m-5 rounded-pill justify-content-between">
-        <img src="../images/food/courgettes_farcies.jpg" alt="Courgettes farcies" id="courgettes" class="rounded-circle object-fit-cover">
-        <p class="titre_plat text-white text-center">Courgettes farcies veggie</p>
-        <button class="border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="des_com d-flex flex-column align-items-center d-none">
-            <p class="description text-white text-center fs-2">Courgettes, riz, haché végétal et champignons</p>
-            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button></a>
+    <div class="plat d-flex align-items-center justify-content-between">
+        <img src="../images/food/courgettes_farcies.jpg" alt="Courgettes farcies" id="courgettes"
+            class="object-fit-cover">
+        <div class="tout d-flex">
+            <p class="titre_plat text-center">Courgettes farcies veggie</p>
+            <hr class="shadow">
+            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="des_com flex-column align-items-center">
+                <p class="description text-center fs-2">Courgettes, riz, haché végétal et champignons</p>
+                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                    <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+            </div>
         </div>
-        <button class="border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
-    <div class="plat d-flex align-items-center m-5 rounded-pill justify-content-between">
-        <img src="../images/food/tarte_veggie.jpg" alt="Tarte veggie" id="tarte" class="rounded-circle object-fit-cover">
-        <p class="titre_plat text-white text-center">Tarte veggie</p>
-        <button class="border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="des_com d-flex flex-column align-items-center d-none">
-            <p class="description text-white text-center fs-2">Crème fraîche, épinards et jeunes pousses</p>
-            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button></a>
+    <div class="plat d-flex align-items-center justify-content-between">
+        <img src="../images/food/tarte_veggie.jpg" alt="Tarte veggie" id="tarte" class="object-fit-cover">
+        <div class="tout d-flex">
+        <p class="titre_plat text-center">Tarte veggie</p>
+        <hr class="shadow">
+        <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="des_com flex-column align-items-center">
+            <p class="description text-center fs-2">Crème fraîche, épinards et jeunes pousses</p>
+            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
         </div>
-        <button class="border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
-    <div class="plat d-flex align-items-center m-5 rounded-pill justify-content-between">
-        <img src="../images/food/buffalo_chicken.webp" alt="Buffalo chicken" class="rounded-circle object-fit-cover">
-        <p class="titre_plat text-white text-center">Buffalo chicken</p>
-        <button class="border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
-        <div class="des_com d-flex flex-column align-items-center d-none">
-            <p class="description text-white text-center fs-2">Tortilla de blé, poulet façon wings, salade, carotte, avocat, fromage frais et tabasco</p>
-            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button></a>
+    <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+    </div>
+    <div class="plat d-flex align-items-center justify-content-between">
+        <img src="../images/food/buffalo_chicken.webp" alt="Buffalo chicken" class="object-fit-cover">
+        <div class="tout d-flex">
+        <p class="titre_plat text-center">Buffalo chicken</p>
+        <hr class="shadow">
+        <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="des_com flex-column align-items-center">
+            <p class="description text-center fs-2">Tortilla de blé, poulet façon wings, salade, carotte,
+                avocat, fromage frais et tabasco</p>
+            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+                </div>
         </div>
-        <button class="border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div id="boutons" class="d-flex justify-content-around my-5">
     <button class="border-0 px-5 py-4 rounded-5"><a href="plats3.html" class="text-decoration-none text-dark">Précédent</a></button>
     <button class="border-0 px-5 py-4 rounded-5"><a href="plats5.html" class="text-decoration-none text-dark">Suivant</a></button>
     </div>
     <div id="separation_ass"></div>
-    <footer class="d-flex justify-content-center">
+    <footer class="justify-content-center">
         <a href="#" class="text-decoration-none"><i
                 class="fa-brands fa-facebook-f me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
         <a href="#" class="text-decoration-none"><i
