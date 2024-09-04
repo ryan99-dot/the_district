@@ -1,6 +1,6 @@
 /**Les différentes entête de lignes continues**/
 
-#entete_leg{
+#entete_leg {
     background-color: rgb(109, 168, 184, 80%);
     height: 120px;
     background-image: url(../images/legumes_ligne.png);
@@ -8,7 +8,7 @@
     background-size: 340px;
 }
 
-#entete_ass{
+#entete_ass {
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/assiette_ligne.png);
     height: 180px;
@@ -16,154 +16,156 @@
     background-blend-mode: multiply;
 }
 
-#entete_tab{
+#entete_tab {
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/table_ligne.png);
     height: 170px;
     background-size: 340px;
     background-blend-mode: multiply;
+    display: flex;
 }
 
 /**Catégories de la page catégorie.html**/
 
-.photo_cat{
+.photo_cat {
     width: 75%;
     height: 200px;
 }
 
-.texte_cat{
+.texte_cat {
     font-size: 65px;
     width: 25%;
 }
 
 
-.categorie_l{
+.categorie_l {
     background-color: rgb(71, 180, 209, 60%);
     color: black;
 }
 
-.categorie_l:hover{
+.categorie_l:hover {
     transform: scale(1.1);
 }
 
-.categorie_l img{
+.categorie_l img {
     border-radius: 0 20px 20px 0;
 }
 
-#asiatique img{
+#asiatique img {
     object-position: 100% 70%;
 }
 
-#asiatique p{
+#asiatique p {
     font-size: 45px;
 }
 
 
-#pates img{
+#pates img {
     object-position: 100% 70%;
 }
 
 
-#salade img{
+#salade img {
     object-position: 100% 55%;
 }
 
 
 
-#veggie img{
+#veggie img {
     object-position: 100% 68%;
 }
 
-.categorie_r{
-    background-color: rgb(0,0,0,60%);
+.categorie_r {
+    background-color: rgb(0, 0, 0, 60%);
     color: #47B4D1;
 }
 
-.categorie_r:hover{
+.categorie_r:hover {
     transform: scale(1.1);
 }
 
-.categorie_r img{
+.categorie_r img {
     border-radius: 20px 0 0 20px;
 }
 
 
-#pizza img{
+#pizza img {
     object-position: 100% 40%;
 }
 
 
 
-#sandwich img{
+#sandwich img {
     object-position: 100% 10%;
 }
 
 
-#wrap img{
+#wrap img {
     object-position: 100% 55%;
 }
 
 /**Plat des pages plats(n).html**/
 
-.plat{
-    background-color: rgb(47,47,47,50%);
+.plat {
+    background-color: rgb(47, 47, 47, 50%);
     width: 50%;
     height: 300px;
     box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%);
     margin: 48px;
-    border-radius: 50rem ;
+    border-radius: 50rem;
 }
 
-.plat img{
+.plat img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
 }
 
-.titre_plat{
+.titre_plat {
     font-size: 70px;
     font-family: "Modern Antiqua";
     color: white;
 }
 
-.plat i{
+.plat i {
     font-size: 50px;
 }
 
-.description{
+.description {
     height: 100%;
     font-family: "Farsan";
     color: white;
 }
 
-.tout{
+.tout {
     width: 100%;
     justify-content: space-between;
     margin-left: 20px;
 }
 
-.commander{
+.commander {
     background-color: #47B4D1;
     font-family: "Julius Sans One";
     font-size: 50px;
 }
 
-.commander_mobile{
+.commander_mobile {
     display: none;
 }
 
-.des_com{
+.des_com {
     height: 70%;
     display: flex;
     display: none;
 }
-hr{
+
+hr {
     display: none;
 }
 
 /**Boutons suivant et précédent des pages plats(n).html**/
 
-#boutons button{
+#boutons button {
     background-color: #47B4D1;
     font-family: "Julius Sans One";
     font-size: 50px;
@@ -171,35 +173,43 @@ hr{
     width: 30%;
 }
 
+.prec_mobile, .suiv_mobile{
+    display: none;
+}
+
+#boutons svg{
+    display: none;
+}
+
 /**Modif image de la page plats1.html**/
 
-#cheeseburger{
+#cheeseburger {
     object-position: 100%;
 }
 
 /**Modif image de la page plats2.html*/
 
-#spa_leg{
+#spa_leg {
     object-position: 0%;
 }
 
-#margherita{
+#margherita {
     object-position: 25%;
 }
 
 /**Modif image de la page plats4.html**/
 
-#courgettes{
+#courgettes {
     width: 450px;
 }
 
-#tarte{
+#tarte {
     object-position: 85%;
 }
 
 /**Entête des pages plats par catégorie**/
 
-h1{
+h1 {
     color: #47B4D1;
     -webkit-text-stroke: 5px black;
     font-size: 250px;
@@ -207,7 +217,7 @@ h1{
 
 /**Entête de la page burger.html**/
 
-#entete_burger{
+#entete_burger {
     background-image: url(../images/category/burger_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
@@ -219,7 +229,7 @@ h1{
 
 /**Entête de la page pates.html**/
 
-#entete_pates{
+#entete_pates {
     background-image: url(../images/category/pasta_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
@@ -228,9 +238,10 @@ h1{
     filter: blur(5px);
     width: 100%;
 }
+
 /**Entête de la page pizza.html**/
 
-#entete_pizza{
+#entete_pizza {
     background-image: url(../images/category/pizza_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
@@ -242,235 +253,298 @@ h1{
 
 /**Entête de la page salade.html**/
 
-#entete_salade{
+#entete_salade {
     background-image: url(../images/category/salade_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 50%;
     filter: blur(5px);
-    width: 100%; 
+    width: 100%;
 }
 
 /**Entête de la page sandwich.html**/
 
-#entete_sandwich{
+#entete_sandwich {
     background-image: url(../images/category/sandwich_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 50%;
     filter: blur(5px);
-    width: 100%; 
+    width: 100%;
 }
 
 /**Entête de la page veggie.html**/
 
-#entete_veggie{
+#entete_veggie {
     background-image: url(../images/category/veggie_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 50%;
     filter: blur(5px);
-    width: 100%; 
+    width: 100%;
 }
 
 /**Entête de la page wrap.html**/
 
-#entete_wrap{
+#entete_wrap {
     background-image: url(../images/category/wrap_cat.jpg);
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 50%;
     filter: blur(5px);
-    width: 100%; 
+    width: 100%;
 }
 
 /**Page contact.html**/
 
-#contact{
+#entete_contact{
+    display: none;
+}
+
+#contact {
     top: 165px;
     font-family: "Gwendolyn";
     font-size: 200px;
 }
 
-form{
+form {
     margin-top: 200px;
 }
 
-form div{
+form div {
     width: 45%;
     background-color: #E2E2E2;
     height: 100px;
 }
 
-#last{
+#last {
     width: 95%;
     height: 300px;
+    border-radius: 25px;
 }
 
-svg{
+svg {
     height: 350px;
     width: 600px;
 }
 
-#bouton{
+#bouton {
     width: 12%;
     height: 50px;
     background-color: rgba(0, 0, 0, 34%);
 }
 
-::placeholder{
-    color: rgba(255,0,0,50%);
+::placeholder {
+    color: rgba(255, 0, 0, 50%);
 }
 
-label, input{
+.champ {
+    border-radius: 50rem;
+    align-items: center;
+}
+
+.champ input {
+    border: 0;
+    border-left: 1px solid black;
+    background: transparent;
+}
+
+.champ label{
+    margin: 0 48px 0 48px;
+}
+
+label,
+input {
     font-family: "Julius Sans One";
 }
 
-input{
+input {
     width: 100%;
     height: 100%;
     outline: none;
 }
 
-textarea{
+textarea {
     outline: none;
     width: 98%;
     height: 100%;
     resize: none;
-    background: radial-gradient(rgba(0,0,0,20%), rgba(0,0,0,5%), rgba(0,0,0,0%));
+    background: radial-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 5%), rgba(0, 0, 0, 0%));
+}
+
+#demande{
+    background: transparent;
+    border: 0;
+    border-top: solid 1px black;
 }
 
 
 /**Page commande.html**/
 
-#commande{
+#commande {
     background-image: url(../images/ibg_rd.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.plats_commande{
+.plats_commande {
     width: 100%;
-    background-color: rgb(47,47,47,50%);
+    background-color: rgb(47, 47, 47, 50%);
     height: 300px;
-    box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%)
+    box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%);
+    border-radius: 50rem;
+    margin: 48px;
 }
 
-.plats_commande img{
+.plats_commande img {
     height: 300px;
     width: 300px;
+    border-radius: 50%;
 }
 
-#champ_num{
+#champ_num {
     width: 25%;
 }
 
-#champ_rue{
+#champ_rue {
     width: 65%;
 }
 
-#champ_cp{
+#champ_cp {
     width: 30%;
 }
 
-#champ_ville{
+#champ_ville {
     width: 60%;
 }
 
-.recap_com{
+.recap_com {
     height: 100%;
     width: 72%;
     margin-left: 100px;
 }
 
-.titre_des{
+.titre_des {
     height: 50%;
     width: 100%;
 }
 
-.titre_des .description{
+.titre_des .description {
     height: auto;
 }
 
-.qt_plat{
+.qt_plat {
     width: 100%;
     font-family: "Julius Sans One";
-    background: radial-gradient(#47B4D1,#47b3d1c9, #47b3d173);
+    background: radial-gradient(#47B4D1, #47b3d1c9, #47b3d173);
+    padding-left: 48px;
+    margin-bottom: 16px;
 }
 
-input[type=number]{
+input[type=number] {
     appearance: textfield;
     width: 20px;
 }
 
-#quantite{
+#quantite {
     width: 100px;
+    margin-right: 48px;
+    margin-left: 48px;
+}
+
+.moins {
+    margin-right: 48px;
+    background: transparent;
+}
+
+.plus {
+    margin-left: 48px;
+    background: transparent;
+}
+
+#champ_obligatoire{
+    display: none;
+}
+
+#envoi_mobile{
+    display: none;
 }
 
 
 /**Media queries**/
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
 
 
-#entete_ass, #entete_leg, #entete_tab{
-    display: none;
-}
-
-.categorie_l, .categorie_r{
-    background: transparent;
-    color: #970747;
-    -webkit-text-stroke: 2px black;
-    align-items: center;
-}
-
-.categorie_l img, .categorie_r img{
-    width: 100%;
-    filter: blur(3px);
-    border-radius: 0;
-}
-
-.categorie_l p, .categorie_r p{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    left: auto;
-    right: auto;
+    #entete_ass,
+    #entete_leg,
+    #entete_tab {
+        display: none;
     }
 
-    h1{
+    .categorie_l,
+    .categorie_r {
+        background: transparent;
+        color: #970747;
+        -webkit-text-stroke: 2px black;
+        align-items: center;
+    }
+
+    .categorie_l img,
+    .categorie_r img {
+        width: 100%;
+        filter: blur(3px);
+        border-radius: 0;
+    }
+
+    .categorie_l p,
+    .categorie_r p {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        left: auto;
+        right: auto;
+    }
+
+    h1 {
         font-size: 100px;
         color: #970747;
         -webkit-text-stroke: 2px black;
     }
 
-    #entete_burger, #entete_pates, #entete_pizza, #entete_salade, #entete_sandwich, #entete_veggie, #entete_wrap{
+    #entete_burger,
+    #entete_pates,
+    #entete_pizza,
+    #entete_salade,
+    #entete_sandwich,
+    #entete_veggie,
+    #entete_wrap {
         height: 200px;
     }
 
-    .plat{
+    .plat {
         margin: 48px 0 0 0;
         border-radius: 20px;
         width: 100%;
         background-color: #ffffff81;
     }
 
-    .chevron{
+    .chevron {
         display: none;
     }
 
-    .des_com{
+    .des_com {
         display: flex;
-            height: 75%;
-            justify-content: space-between;
+        height: 75%;
+        justify-content: space-between;
 
     }
 
-    .plat img{
+    .plat img {
         border-radius: 20px 0 0 20px;
         width: 50%;
     }
@@ -479,7 +553,7 @@ input[type=number]{
         text-decoration: none;
     }
 
-    .titre_plat{
+    .titre_plat {
         font-size: 35px;
         height: 25%;
         margin: 0;
@@ -491,11 +565,11 @@ input[type=number]{
         -webkit-text-stroke: 1px #970747;
     }
 
-    .commander{
+    .commander {
         display: none;
     }
 
-    .commander_mobile{
+    .commander_mobile {
         display: flex;
         background-color: #970747;
         font-family: "Modern Antiqua";
@@ -508,7 +582,7 @@ input[type=number]{
         align-items: center;
     }
 
-    .tout{
+    .tout {
         flex-direction: column;
         height: 100%;
         justify-content: space-around;
@@ -516,20 +590,197 @@ input[type=number]{
         width: 50%;
     }
 
-    .description{
+    .description {
         height: auto;
         color: black;
     }
 
-    hr{
+    hr {
         display: block;
         color: #970747;
         margin: 0;
         border: 2px solid #970747;
         opacity: 100%;
+        width: 100%;
     }
 
-    #courgettes{
+    #courgettes {
         width: 50%;
     }
+
+    .prec_desktop, .suiv_desktop{
+        display: none;
+    }
+
+    .prec_mobile, .suiv_mobile{
+        display: block;
+        z-index: 1;
+    }
+
+
+    #boutons svg{
+        display: block;
+        height: 150px;
+    }
+
+
+    #commande {
+        background-image: none;
+    }
+
+    .plats_commande {
+        margin: 48px 0 48px 0;
+        border-radius: 20px;
+        width: 100%;
+        background-color: #ffffff81;
+    }
+
+    .plats_commande img {
+        border-radius: 20px 0 0 20px;
+        width: 50%;
+    }
+
+    .titre_des {
+        flex-direction: column;
+    }
+
+    .recap_com {
+        width: 50%;
+        margin: 0;
+    }
+
+    .label_qtt {
+        display: none;
+    }
+
+    .qt_plat {
+        background: radial-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0));
+        padding: 0;
+        margin: 0;
+        height: 25%;
+    }
+
+    .nbr_qt {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .moins {
+        margin: 0;
+        background-color: #970747;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plus {
+        margin: 0;
+        background-color: #970747;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #quantite {
+        margin: 0;
+    }
+
+    .titre_des .description {
+        height: 50%;
+    }
+
+    ::placeholder {
+        color: transparent;
+    }
+
+    form div {
+        background: transparent;
+    }
+
+    .champ input{
+        border: 0;
+        background-color: #E2E2E2;
+        border-radius: 30px;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .champ{
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+
+    .champ label{
+        margin:0 0 0 5px;
+        color: #970747;
+    }
+
+    .obligatoire::after{
+        content: "*";
+    }
+
+    #champ_obligatoire{
+        display: block;
+        color: #970747;
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    #bouton{
+        display: none;
+    }
+
+    #envoi_mobile{
+        display: flex;
+        background-color: rgb(151, 7, 71);
+        width: 80px;
+        height: 80px;
+        margin-left: 500px;
+    }
+
+    #envoi_mobile i{
+        font-size: 50px;
+    }
+
+    #entete_contact{
+        display: flex;
+        background-image: url(../images/bg1.jpeg);
+        background-repeat: no-repeat;
+        background-position-x: 0%;
+        background-position-y: 100%;
+        background-size: 300%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #entete_contact h1{
+        -webkit-text-stroke-color: rgb(184, 180, 180);
+    }
+    #demande{
+        background-color: #E2E2E2;
+        border: 0;
+        border-radius: 30px;
+    }
+
+    form{
+        margin-top: 50px
+    };
+
+    #last{
+        width: 100%;
+    }
+
+    textarea{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
 }

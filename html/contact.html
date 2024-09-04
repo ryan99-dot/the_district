@@ -16,8 +16,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg sticky-top d-flex justify-content-between p-0 shadow">
-            <img src="../images/the_district_brand/logo_transparent.png" alt="Logo The District">
-            <ul class="navbar-nav col d-flex justify-content-around">
+            <img src="../images/the_district_brand/logo_transparent.png" alt="Logo The District" id="logo_desktop">
+            <img src="../images/the_district_brand/logo.png" alt="Logo The District" id="logo_mobile">
+            <ul class="navbar-nav col justify-content-around">
                 <li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
                     <a href="../index.html" class="nav-link text-dark fs-3">Accueil</a>
                 </li>
@@ -32,8 +33,9 @@
                 </li>
             </ul>
             <a href="commande.html"><img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu"></a>
+            <button class="border-0 bg-transparent"><i class="fa-solid fa-bars text-white me-2"></i></button>
         </nav>
-        <div id="entete_tab" class="d-flex justify-content-center">
+        <div id="entete_tab" class="justify-content-center">
             <h1 id="contact" class="position-absolute px-5 z-1">Contact</h1>
             <svg viewBox="0 -20 200 100" xmlns="http://www.w3.org/2000/svg" class="position-absolute">
                 <defs>
@@ -45,33 +47,37 @@
                 <ellipse cx="100" cy="20" rx="102" ry="45" fill="url('#monDegrade')" />
             </svg>
         </div>
+        <div id="banniere_mobile"></div>
+        <div id="entete_contact"><h1>Contact</h1></div>
     </header>
     <form method="get" class="d-flex flex-wrap justify-content-around">
-            <div class="rounded-pill d-flex align-items-center mb-5">
-                <label for="prenom" class="mx-5 fs-2">Prénom</label>
-                <input type="text" id="prenom" class="bg-transparent border-0 border-start border-dark px-4 fs-4">
+            <div class="champ d-flex mb-5">
+                <label for="prenom" class="fs-2">Prénom</label>
+                <input type="text" id="prenom" class="px-4 fs-4">
             </div>
-            <div class="rounded-pill d-flex align-items-center mb-5">
-                <label for="nom" class="mx-5 fs-2">Nom</label>
-                <input type="text" id="nom" placeholder="Champ obligatoire" class="bg-transparent border-0 border-start border-dark px-4 fs-4">
+            <div class="champ d-flex mb-5">
+                <label for="nom" class="obligatoire fs-2">Nom</label>
+                <input type="text" id="nom" placeholder="Champ obligatoire" class="px-4 fs-4">
             </div>
-            <div class="rounded-pill d-flex align-items-center mb-5">
-                <label for="email" class="mx-5 fs-2">Email</label>
-                <input type="text" id="email" class="bg-transparent border-0 border-start border-dark px-4 fs-4">
+            <div class="champ d-flex mb-5">
+                <label for="email" class="fs-2">Email</label>
+                <input type="text" id="email" class="px-4 fs-4">
             </div>
-            <div class="rounded-pill d-flex align-items-center mb-5">
-                <label for="telephone" class="mx-5 fs-2">Téléphone</label>
-                <input type="text" id="telephone" placeholder="Champ obligatoire" class="bg-transparent border-0 border-start border-dark px-4 fs-4">
+            <div class="champ d-flex mb-5">
+                <label for="telephone" class="obligatoire fs-2">Téléphone</label>
+                <input type="text" id="telephone" placeholder="Champ obligatoire" class="px-4 fs-4">
             </div>
-            <div class="rounded-5 d-flex flex-column align-items-center mb-5" id="last">
-                <label for="demande" class="fs-2 my-2">Votre demande</label>
-                <textarea id="demande" class="bg-transparent border-0 border-top border-dark px-5 fs-4 rounded-bottom-5"></textarea>
+            <div class="champ d-flex flex-column mb-5" id="last">
+                <label for="demande" class="fs-2">Votre demande</label>
+                <textarea id="demande" class="px-5 fs-4"></textarea>
             </div>
+            <p id="champ_obligatoire">* Champs obligatoires</p>
             <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4">
+            <button type="submit" id="envoi_mobile" class="border-0 rounded-circle align-items-center justify-content-center mb-3"><i class="fa-regular fa-paper-plane"></i></button>
         </div>
     </form>
     <div id="separation_tab"></div>
-    <footer class="d-flex justify-content-center">
+    <footer class="justify-content-center">
         <a href="#" class="text-decoration-none"><i
                 class="fa-brands fa-facebook-f me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
         <a href="#" class="text-decoration-none"><i

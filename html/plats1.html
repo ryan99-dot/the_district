@@ -101,8 +101,19 @@
         <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div id="boutons" class="d-flex justify-content-around my-5">
-    <button class="border-0 px-5 py-4 rounded-5"><a href="plats5.html" class="text-decoration-none text-dark">Précédent</a></button>
-    <button class="border-0 px-5 py-4 rounded-5"><a href="plats2.html" class="text-decoration-none text-dark">Suivant</a></button>
+        <svg viewBox="0 -20 200 100" xmlns="http://www.w3.org/2000/svg" class="position-absolute">
+            <defs>
+                <radialGradient id="monDegrade">
+                    <stop offset="50%" stop-color="rgba(151, 7, 71,40%)" />
+                    <stop offset="100%" stop-color="rgba(151,7,71,0%)" />
+                </radialGradient>
+            </defs>
+            <ellipse cx="100" cy="38" rx="200" ry="45" fill="url('#monDegrade')" />
+        </svg>
+    <button class="prec_desktop border-0 px-5 py-4 rounded-5"><a href="plats5.html" class="text-decoration-none text-dark">Précédent</a></button>
+    <button class="prec_mobile border-0 bg-transparent"><a href="plats5.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-left"></i></a></button>
+    <button class="suiv_desktop border-0 px-5 py-4 rounded-5"><a href="plats2.html" class="text-decoration-none text-dark">Suivant</a></button>
+    <button class="suiv_mobile border-0 bg-transparent"><a href="plats2.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right"></i></a></button>
     </div>
     <div id="separation_ass"></div>
     <footer class="justify-content-center">
