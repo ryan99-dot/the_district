@@ -18,7 +18,7 @@ nav i{
     display: none;
 }
 
-nav button{
+#mySidenav{
     display: none;
 }
 
@@ -97,8 +97,6 @@ footer i {
 }
 
 
-
-
 /**Media queries**/
 
 @media screen and (max-width:767px) {
@@ -118,7 +116,7 @@ footer i {
         background: linear-gradient(0.25turn, #970747 0% 40%, black);
     }
 
-    nav button{
+    #mySidenav{
         display: block;
     }
 
@@ -149,5 +147,75 @@ display: none;
     footer{
         display: none;
     }
+
+
+    /**Menu burger**/
+    /* Sidenav menu */
+.sidenav {
+    height: 85%;
+    width: 75%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -50000px;
+    background: linear-gradient(0.25turn, #970747 0% 40%, black);
+    padding-top: 60px;
+    transition: right 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    -webkit-text-stroke: 0;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidenav li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    right: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    top: 5px;
+    right: 25px;
+    font-size: 60px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 8px 15px;
+  }
+
+  #reseaux_mobile{
+    width: 100%;
+  }
+  
 
 }

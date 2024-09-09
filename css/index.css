@@ -117,12 +117,12 @@ height: 600px;
 }
 
 #plats {
-    margin-left: 165px;
+    margin-left: 125px;
     height: 260px;
 }
 
 #plats img {
-    width: 400px;
+    width: 25%;
     height: 240px;
     position: absolute;
 }
@@ -138,31 +138,31 @@ height: 600px;
 }
 
 #plat2 {
-    left: 365px;
+    left: 375px;
     z-index: 5;
     border-radius: 20px;
 }
 
 #plat3 {
-    left: 565px;
+    left: 600px;
     z-index: 4;
     border-radius: 20px;
 }
 
 #plat4 {
-    left: 765px;
+    left: 825px;
     z-index: 3;
     border-radius: 20px;
 }
 
 #plat5 {
-    left: 965px;
+    left: 1050px;
     z-index: 2;
     border-radius: 20px;
 }
 
 #plat6 {
-    left: 1165px;
+    left: 1275px;
     z-index: 1;
     border-radius: 20px;
 }

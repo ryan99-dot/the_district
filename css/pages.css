@@ -197,6 +197,12 @@ hr {
     object-position: 25%;
 }
 
+/**Modif image de la page plats3.html**/
+
+#salade_caesar{
+    width: 450px;
+}
+
 /**Modif image de la page plats4.html**/
 
 #courgettes {
@@ -205,6 +211,10 @@ hr {
 
 #tarte {
     object-position: 85%;
+}
+
+#buffalo{
+    width: 450px;
 }
 
 /**Entête des pages plats par catégorie**/

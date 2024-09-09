@@ -37,7 +37,38 @@
                 </li>
             </ul>
             <a href="#"><img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu"></a>
-            <button class="border-0 bg-transparent"><i class="fa-solid fa-bars text-white me-2"></i></button>
+            <div id="mySidenav" class="sidenav">
+                <div class="d-flex justify-content-between align-items-center mx-5">
+                    <a href="#.html"><i class="fa-solid fa-basket-shopping fs-1"></i></a>
+                <a id="closeBtn" href="#" class="close">×</a>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="categorie.html">Catégorie</a></li>
+                    <li><a href="plats1.html">Plats</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div id="reseaux_mobile" class="d-flex justify-content-around mt-3">
+                    <a href="#" class="text-decoration-none"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-decoration-none"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-decoration-none"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="text-decoration-none"><i
+                            class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" class="text-decoration-none"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
         </nav>
         <div id="entete_tab"></div>
         <div id="banniere_mobile"></div>
@@ -65,54 +96,54 @@
         </div>
         <div class="champ d-flex mb-5">
             <label for="prenom" class="obligatoire fs-2">Prénom</label>
-            <input type="text" id="prenom" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="prenom" id="prenom" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5">
             <label for="nom" class="obligatoire fs-2">Nom</label>
-            <input type="text" id="nom" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="nom" id="nom" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5">
             <label for="email" class="obligatoire fs-2">Email</label>
-            <input type="text" id="email" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="email" id="email" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5">
             <label for="telephone" class="obligatoire fs-2">Téléphone</label>
-            <input type="text" id="telephone" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="telphone" id="telephone" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5" id="champ_num">
             <label for="numero" class="obligatoire fs-2">N°</label>
-            <input type="text" id="numero" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="numero" id="numero" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5" id="champ_rue">
             <label for="rue" class="obligatoire fs-2">Rue</label>
-            <input type="text" id="rue" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="rue" id="rue" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5" id="champ_cp">
             <label for="code_postal" class="obligatoire fs-2">Code postal</label>
-            <input type="text" id="code_postal" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="code_postal" id="code_postal" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5" id="champ_ville">
             <label for="ville" class="obligatoire fs-2">Ville</label>
-            <input type="text" id="ville" placeholder="Champ obligatoire"
-                class="px-4 fs-4">
+            <input type="text" name="ville" id="ville" placeholder="Champ obligatoire"
+                class="px-4 fs-4" required>
         </div>
         <p id="champ_obligatoire">* Champs obligatoires</p>
-        <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4 my-5">
-        <button type="submit" id="envoi_mobile" class="border-0 rounded-circle align-items-center justify-content-center mb-3"><i class="fa-regular fa-paper-plane"></i></button>
+        <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4 my-5" onclick="verif_commande()">
+        <button type="submit" id="envoi_mobile" class="border-0 rounded-circle align-items-center justify-content-center mb-3" onclick="verif_commande()"><i class="fa-regular fa-paper-plane"></i></button>
     </form>
     <div id="separation_tab"></div>
     <footer class="justify-content-center">
         <a href="#" class="text-decoration-none"><i
                 class="fa-brands fa-facebook-f me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
         <a href="#" class="text-decoration-none"><i
-                class="fa-brands fa-instagram me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
+                class="fa-brands fa-instagram ^[\wÀ-ÿ-|\s*]+$me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
         <a href="#" class="text-decoration-none"><i
                 class="fa-brands fa-linkedin-in me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
         <a href="#" class="text-decoration-none"><i
@@ -120,6 +151,7 @@
         <a href="#" class="text-decoration-none"><i
                 class="fa-brands fa-youtube rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
     </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>
