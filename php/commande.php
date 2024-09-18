@@ -19,57 +19,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top d-flex justify-content-between p-0 shadow">
-            <img src="../images/the_district_brand/logo_transparent.png" alt="Logo The District" id="logo_desktop">
-            <img src="../images/the_district_brand/logo.png" alt="Logo The District" id="logo_mobile">
-            <ul class="navbar-nav col justify-content-around">
-                <li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
-                    <a href="../index.html" class="nav-link text-dark fs-3">Accueil</a>
-                </li>
-                <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
-                    <a href="categorie.html" class="nav-link text-dark fs-3">Catégorie</a>
-                </li>
-                <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
-                    <a href="plats1.html" class="nav-link text-dark fs-3">Plats</a>
-                </li>
-                <li class="nav-item d-flex justify-content-center align-items-center">
-                    <a href="contact.html" class="nav-link text-dark fs-3">Contact</a>
-                </li>
-            </ul>
-            <a href="#"><img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu"></a>
-            <div id="mySidenav" class="sidenav">
-                <div class="d-flex justify-content-between align-items-center mx-5">
-                    <a href="#.html"><i class="fa-solid fa-basket-shopping fs-1"></i></a>
-                <a id="closeBtn" href="#" class="close">×</a>
-                </div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="categorie.html">Catégorie</a></li>
-                    <li><a href="plats1.html">Plats</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div id="reseaux_mobile" class="d-flex justify-content-around mt-3">
-                    <a href="#" class="text-decoration-none"><i
-                            class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="text-decoration-none"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="text-decoration-none"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" class="text-decoration-none"><i
-                            class="fa-brands fa-pinterest-p"></i></a>
-                    <a href="#" class="text-decoration-none"><i
-                            class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-
-            <a href="#" id="openBtn">
-                <span class="burger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </a>
-        </nav>
+    <?php require_once(__DIR__ . "/nav.php"); ?>
         <div id="entete_tab"></div>
         <div id="banniere_mobile"></div>
     </header>
@@ -139,18 +89,8 @@
         <button type="submit" id="envoi_mobile" class="border-0 rounded-circle align-items-center justify-content-center mb-3" onclick="verif_commande()"><i class="fa-regular fa-paper-plane"></i></button>
     </form>
     <div id="separation_tab"></div>
-    <footer class="justify-content-center">
-        <a href="#" class="text-decoration-none"><i
-                class="fa-brands fa-facebook-f me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
-        <a href="#" class="text-decoration-none"><i
-                class="fa-brands fa-instagram ^[\wÀ-ÿ-|\s*]+$me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
-        <a href="#" class="text-decoration-none"><i
-                class="fa-brands fa-linkedin-in me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
-        <a href="#" class="text-decoration-none"><i
-                class="fa-brands fa-pinterest-p me-5 rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
-        <a href="#" class="text-decoration-none"><i
-                class="fa-brands fa-youtube rounded-circle d-flex justify-content-center align-items-center border border-3 border-dark"></i></a>
-    </footer>
+    <?php require_once(__DIR__ . "/footer.php"); ?>
+
     <script src="../javascript/script.js"></script>
 </body>
 
