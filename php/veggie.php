@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza - The District</title>
+    <title>Veggie - The District</title>
     <script src="https://kit.fontawesome.com/694d251a11.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -36,7 +36,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Spaghettis, poivrons,sauce tomate et oignons</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Sauce tomate, mozzarella, tomates et basilic</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -64,7 +64,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs2">Pain de mie toasté, fromages et moutarde américaine</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -79,7 +79,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Courgettes, riz, haché végétal et champignons</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -93,7 +93,7 @@
         <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="des_com flex-column align-items-center">
             <p class="description text-center fs-2">Crème fraîche, épinards et jeunes pousses</p>
-            <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+            <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                 <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
         </div>
     </div>

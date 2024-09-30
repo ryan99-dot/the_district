@@ -30,7 +30,7 @@
                 <div class=" titre_des bg-transparent d-flex justify-content-between align-items-center">
                     <p class="titre_plat text-center">Big burger</p>
                     <hr class="shadow">
-                    <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate,
+                    <p class="description text-center">2 steaks, 2 tranches de cheddar, salade, tomate,
                         oignons cuits et mayonnaise</p>
                 </div>
                 <div class="qt_plat d-flex align-items-center justify-content-between rounded-5">

@@ -36,7 +36,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate, oignons
                     cuits et mayonnaise</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -51,7 +51,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak façon bouchère, salade, cornichon,
                     oignons caramélisés et sauce burger</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -66,7 +66,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak façon bouchère, 2 tranches de cheddar,
                     bacon et sauce BBQ</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -81,7 +81,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak, cheddar, salade, tomate et moutarde
                 </p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>

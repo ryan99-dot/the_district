@@ -29,10 +29,11 @@ console.log(cl)
 
 
 
-for (i = 0; i < des.length; i++
-) {
+/*for (i = 0; i < des.length; i++)
+{
   op[i].onclick = openchevron(i)
   cl[i].onclick = closechevron(i)
+  
 }
 
 function openchevron(n) {
@@ -45,7 +46,29 @@ function closechevron(n) {
   des[n].style.display = "none"
   op[n].style.display = "block"
   cl[n].style.display = "none"
-}
+}*/
+
+
+  
+  function openchevron(n) {
+    des[n].style.display = "block"
+    op[n].style.display = "none"
+    cl[n].style.display = "block"
+    console.log (op[n])
+  }
+  
+  function closechevron(n) {
+    des[n].style.display = "none"
+    op[n].style.display = "block"
+    cl[n].style.display = "none"
+  }
+
+  for (i = 0; i < des.length; i++)
+    {
+      op[i].addEventListener("click", openchevron(i))
+      cl[i].addEventListener("click", closechevron(i))
+      console.log (op[i])
+    }
 
 
 

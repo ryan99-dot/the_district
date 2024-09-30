@@ -38,7 +38,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Pâtes lasagne, viande hachée, sauce tomate, béchamel,
                     oignons, carottes et fromages</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -54,7 +54,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Spaghettis, poivrons,sauce tomate et oignons</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -68,7 +68,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Tagliatelles, saumon et crème fraîche</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>

@@ -35,7 +35,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Sauce tomate, mozzarella, tomates et basilic</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs2">Sauce tomate, mozzarella, merguez, tomates, olives et
                     basilic</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -65,7 +65,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Crème fraîche, saumon, jus de citron et jeunes pousses
                 </p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>

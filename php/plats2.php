@@ -30,7 +30,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Pâtes lasagne, viande hachée, sauce tomate, béchamel,
                     oignons, carottes et fromages</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Spaghettis, poivrons,sauce tomate et oignons</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -58,7 +58,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Tagliatelles, saumon et crème fraîche</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -72,7 +72,7 @@
             <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Sauce tomate, mozzarella, tomates et basilic</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -88,10 +88,10 @@
             </defs>
             <ellipse cx="100" cy="38" rx="200" ry="45" fill="url('#monDegrade')" />
         </svg>
-    <button class="prec_desktop border-0 px-5 py-4 rounded-5"><a href="plats1.html" class="text-decoration-none text-dark">Précédent</a></button>
-    <button class="prec_mobile border-0 bg-transparent"><a href="plats1.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-left"></i></a></button>
-    <button class="suiv_desktop border-0 px-5 py-4 rounded-5"><a href="plats3.html" class="text-decoration-none text-dark">Suivant</a></button>
-    <button class="suiv_mobile border-0 bg-transparent"><a href="plats3.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right"></i></a></button>
+    <button class="prec_desktop border-0 px-5 py-4 rounded-5"><a href="plats1.php" class="text-decoration-none text-dark">Précédent</a></button>
+    <button class="prec_mobile border-0 bg-transparent"><a href="plats1.php" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-left"></i></a></button>
+    <button class="suiv_desktop border-0 px-5 py-4 rounded-5"><a href="plats3.php" class="text-decoration-none text-dark">Suivant</a></button>
+    <button class="suiv_mobile border-0 bg-transparent"><a href="plats3.php" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right"></i></a></button>
     </div>
     <div id="separation_ass"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>

@@ -5,14 +5,14 @@
     height: 120px;
     background-image: url(../images/legumes_ligne.png);
     background-blend-mode: multiply;
-    background-size: 340px;
+    background-size: 310px;
 }
 
 #entete_ass {
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/assiette_ligne.png);
     height: 180px;
-    background-size: 340px;
+    background-size: 310px;
     background-blend-mode: multiply;
 }
 
@@ -20,7 +20,7 @@
     background-color: rgb(109, 168, 184, 80%);
     background-image: url(../images/table_ligne.png);
     height: 170px;
-    background-size: 340px;
+    background-size: 310px;
     background-blend-mode: multiply;
     display: flex;
 }
@@ -56,7 +56,7 @@
 }
 
 #asiatique p {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 
@@ -122,7 +122,7 @@
 }
 
 .titre_plat {
-    font-size: 70px;
+    font-size: 55px;
     font-family: "Modern Antiqua";
     color: white;
 }
@@ -170,14 +170,15 @@ hr {
     font-family: "Julius Sans One";
     font-size: 50px;
     margin-top: 50px;
-    width: 30%;
+    width: 35%;
 }
 
-.prec_mobile, .suiv_mobile{
+.prec_mobile,
+.suiv_mobile {
     display: none;
 }
 
-#boutons svg{
+#boutons svg {
     display: none;
 }
 
@@ -199,7 +200,7 @@ hr {
 
 /**Modif image de la page plats3.html**/
 
-#salade_caesar{
+#salade_caesar {
     width: 450px;
 }
 
@@ -213,7 +214,7 @@ hr {
     object-position: 85%;
 }
 
-#buffalo{
+#buffalo {
     width: 450px;
 }
 
@@ -222,7 +223,7 @@ hr {
 h1 {
     color: #47B4D1;
     -webkit-text-stroke: 5px black;
-    font-size: 250px;
+    font-size: 230px;
 }
 
 /**Entête de la page burger.html**/
@@ -235,6 +236,7 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Entête de la page pates.html**/
@@ -247,6 +249,7 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Entête de la page pizza.html**/
@@ -259,6 +262,7 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Entête de la page salade.html**/
@@ -271,6 +275,7 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Entête de la page sandwich.html**/
@@ -283,6 +288,7 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Entête de la page veggie.html**/
@@ -295,6 +301,7 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Entête de la page wrap.html**/
@@ -307,11 +314,12 @@ h1 {
     background-position-y: 50%;
     filter: blur(5px);
     width: 100%;
+    background-attachment: fixed;
 }
 
 /**Page contact.html**/
 
-#entete_contact{
+#entete_contact {
     display: none;
 }
 
@@ -343,7 +351,7 @@ svg {
 }
 
 #bouton {
-    width: 12%;
+    width: 18%;
     height: 50px;
     background-color: rgba(0, 0, 0, 34%);
 }
@@ -363,7 +371,7 @@ svg {
     background: transparent;
 }
 
-.champ label{
+.champ label {
     margin: 0 48px 0 48px;
 }
 
@@ -386,7 +394,7 @@ textarea {
     background: radial-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 5%), rgba(0, 0, 0, 0%));
 }
 
-#demande{
+#demande {
     background: transparent;
     border: 0;
     border-top: solid 1px black;
@@ -398,7 +406,7 @@ textarea {
 #commande {
     background-image: url(../images/ibg_rd.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .plats_commande {
@@ -435,20 +443,21 @@ textarea {
 .recap_com {
     height: 100%;
     width: 72%;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .titre_des {
     height: 50%;
-    width: 100%;
+    width: 92%;
 }
 
 .titre_des .description {
     height: auto;
+    font-size: 30px;
 }
 
 .qt_plat {
-    width: 100%;
+    width: 92%;
     font-family: "Julius Sans One";
     background: radial-gradient(#47B4D1, #47b3d1c9, #47b3d173);
     padding-left: 48px;
@@ -461,26 +470,25 @@ input[type=number] {
 }
 
 #quantite {
-    width: 100px;
-    margin-right: 48px;
-    margin-left: 48px;
+    margin-right: 28px;
+    margin-left: 28px;
 }
 
 .moins {
-    margin-right: 48px;
+    margin-right: 28px;
     background: transparent;
 }
 
 .plus {
-    margin-left: 48px;
+    margin-left: 28px;
     background: transparent;
 }
 
-#champ_obligatoire{
+#champ_obligatoire {
     display: none;
 }
 
-#envoi_mobile{
+#envoi_mobile {
     display: none;
 }
 
@@ -534,6 +542,7 @@ input[type=number] {
     #entete_veggie,
     #entete_wrap {
         height: 200px;
+        background-attachment: local;
     }
 
     .plat {
@@ -618,17 +627,19 @@ input[type=number] {
         width: 50%;
     }
 
-    .prec_desktop, .suiv_desktop{
+    .prec_desktop,
+    .suiv_desktop {
         display: none;
     }
 
-    .prec_mobile, .suiv_mobile{
+    .prec_mobile,
+    .suiv_mobile {
         display: block;
         z-index: 1;
     }
 
 
-    #boutons svg{
+    #boutons svg {
         display: block;
         height: 150px;
     }
@@ -715,52 +726,53 @@ input[type=number] {
         background: transparent;
     }
 
-    .champ input{
+    .champ input {
         border: 0;
         background-color: #E2E2E2;
         border-radius: 30px;
         width: 95%;
         margin-left: 2.5%;
     }
-    .champ{
+
+    .champ {
         flex-direction: column;
         width: 100%;
         align-items: start;
     }
 
-    .champ label{
-        margin:0 0 0 5px;
+    .champ label {
+        margin: 0 0 0 5px;
         color: #970747;
     }
 
-    .obligatoire::after{
+    .obligatoire::after {
         content: "*";
     }
 
-    #champ_obligatoire{
+    #champ_obligatoire {
         display: block;
         color: #970747;
         width: 100%;
         margin-left: 5px;
     }
 
-    #bouton{
+    #bouton {
         display: none;
     }
 
-    #envoi_mobile{
+    #envoi_mobile {
         display: flex;
         background-color: rgb(151, 7, 71);
         width: 80px;
         height: 80px;
-        margin-left: 500px;
+        margin-left: 300px;
     }
 
-    #envoi_mobile i{
+    #envoi_mobile i {
         font-size: 50px;
     }
 
-    #entete_contact{
+    #entete_contact {
         display: flex;
         background-image: url(../images/bg1.jpeg);
         background-repeat: no-repeat;
@@ -771,26 +783,100 @@ input[type=number] {
         align-items: center;
     }
 
-    #entete_contact h1{
+    #entete_contact h1 {
         -webkit-text-stroke-color: rgb(184, 180, 180);
     }
-    #demande{
+
+    #demande {
         background-color: #E2E2E2;
         border: 0;
         border-radius: 30px;
     }
 
-    form{
+    form {
         margin-top: 50px
-    };
+    }
 
-    #last{
+    ;
+
+    #last {
         width: 100%;
     }
 
-    textarea{
+    textarea {
         width: 95%;
         margin-left: 2.5%;
+    }
+
+    #asiatique p {
+        font-size: 45px;
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    form div {
+        width: 95%;
+    }
+
+    #asiatique p {
+        font-size: 30px;
+    }
+
+    #burger p {
+        font-size: 45px;
+    }
+
+    #salade p {
+        font-size: 60px;
+    }
+
+    #sandwich p {
+        font-size: 45px;
+    }
+
+    #boutons button {
+        font-size: 40px;
+        width: 38%;
+    }
+
+    .nbr_qt {
+        width: 50%;
+    }
+
+    #quantite {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .qt_plat {
+        padding-left: 8px;
+        width: 85%;
+    }
+
+    .moins {
+        margin-right: 5px;
+    }
+
+    .plus {
+        margin-left: 5px;
+    }
+
+    .titre_des .description {
+        font-size: 18px;
+    }
+
+    .titre_plat {
+        font-size: 40px;
+    }
+
+    .recap_com {
+        margin-left: 5px;
+    }
+
+    h1 {
+        font-size: 190px;
     }
 
 }

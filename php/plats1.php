@@ -30,7 +30,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate, oignons
                     cuits et mayonnaise</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak façon bouchère, salade, cornichon,
                     oignons caramélisés et sauce burger</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -60,7 +60,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak façon bouchère, 2 tranches de cheddar,
                     bacon et sauce BBQ</p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -75,7 +75,7 @@
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak, cheddar, salade, tomate et moutarde
                 </p>
-                <a href="commande.html"><button class="commander border-0 rounded-2 px-5">Commander</button>
+                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
@@ -91,10 +91,10 @@
             </defs>
             <ellipse cx="100" cy="38" rx="200" ry="45" fill="url('#monDegrade')" />
         </svg>
-    <button class="prec_desktop border-0 px-5 py-4 rounded-5"><a href="plats5.html" class="text-decoration-none text-dark">Précédent</a></button>
-    <button class="prec_mobile border-0 bg-transparent"><a href="plats5.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-left"></i></a></button>
-    <button class="suiv_desktop border-0 px-5 py-4 rounded-5"><a href="plats2.html" class="text-decoration-none text-dark">Suivant</a></button>
-    <button class="suiv_mobile border-0 bg-transparent"><a href="plats2.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right"></i></a></button>
+    <button class="prec_desktop border-0 px-5 py-4 rounded-5"><a href="plats5.php" class="text-decoration-none text-dark">Précédent</a></button>
+    <button class="prec_mobile border-0 bg-transparent"><a href="plats5.php" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-left"></i></a></button>
+    <button class="suiv_desktop border-0 px-5 py-4 rounded-5"><a href="plats2.php" class="text-decoration-none text-dark">Suivant</a></button>
+    <button class="suiv_mobile border-0 bg-transparent"><a href="plats2.php" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right"></i></a></button>
     </div>
     <div id="separation_ass"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>

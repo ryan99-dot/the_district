@@ -1,10 +1,22 @@
 #champ_recherche {
     display: flex;
-    background-color: rgb(109, 168, 184, 80%);
-    background-image: url(../images/table_ligne.png);
-    background-size: 340px;
-    height: 170px;
+    ;
+    ;
+    background-size: 310px;
+    height: 160px;
     background-blend-mode: multiply
+}
+
+#background-video {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 145px;
+    bottom: 0;
+    z-index: -1;
 }
 
 #recherche {
@@ -28,68 +40,67 @@ svg {
     height: 150px;
 }
 
-#categories a{
-text-decoration: none;
-background-repeat: no-repeat;
-background-size: cover;
-width: 12.5%;
-height: 600px;
+#categories a {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 12.5%;
+    height: 600px;
 }
 
-#asiatique{
+#asiatique {
     background-image: url(../images/category/asian_food_cat.jpg);
     background-position-x: 42%;
-    font-family: "Geostar Fill" ;
 }
 
-#burger{
-    background-image:url(../images/category/burger_cat.jpg);
+#burger {
+    background-image: url(../images/category/burger_cat.jpg);
     background-position-x: 50%;
 }
 
-#pates{
+#pates {
     background-image: url(../images/category/pasta_cat.jpg);
     background-position-x: 55%;
 }
 
-#pizza{
+#pizza {
     background-image: url(../images/category/pizza_cat.jpg);
 }
 
-#salade{
+#salade {
     background-image: url(../images/category/salade_cat.jpg);
     background-position-x: 55%;
 }
 
-#sandwich{
+#sandwich {
     background-image: url(../images/category/sandwich_cat.jpg);
     background-position-x: 55%;
 }
 
-#veggie{
+#veggie {
     background-image: url(../images/category/veggie_cat.jpg);
     background-position-x: 80%;
 }
 
-#wrap{
+#wrap {
     background-image: url(../images/category/wrap_cat.jpg);
     background-position-x: 15%;
 }
 
 
-#categories a:hover{
+#categories a:hover {
     transform: scale(1.2);
     filter: grayscale(60%);
 }
 
-#categories p{
+#categories p {
     display: flex;
     height: 100%;
     width: 100%;
     color: transparent;
 }
 
-#categories p:hover{
+#categories p:hover {
     color: #47B4D1;
     -webkit-text-stroke: 0.8px black;
 }
@@ -100,11 +111,11 @@ height: 600px;
     height: 600px;
 }
 
-#categories img:hover{
+#categories img:hover {
     transform: scale(1.2);
 }
 
-.up{
+.up {
     margin-bottom: 250px;
 }
 
@@ -117,8 +128,9 @@ height: 600px;
 }
 
 #plats {
-    margin-left: 125px;
     height: 260px;
+    width: 100%;
+    margin-right: 10%;
 }
 
 #plats img {
@@ -127,129 +139,136 @@ height: 600px;
     position: absolute;
 }
 
-#plats img:hover{
+#plats img:hover {
     transform: scale(1.2);
     z-index: 7;
 }
 
-#plat1{
+#plat1 {
     z-index: 6;
     border-radius: 20px;
+    left: 6.25%;
 }
 
 #plat2 {
-    left: 375px;
+    left: 18.75%;
     z-index: 5;
     border-radius: 20px;
 }
 
 #plat3 {
-    left: 600px;
+    left: 31.25%;
     z-index: 4;
     border-radius: 20px;
 }
 
 #plat4 {
-    left: 825px;
+    left: 43.75%;
     z-index: 3;
     border-radius: 20px;
 }
 
 #plat5 {
-    left: 1050px;
+    left: 56.25%;
     z-index: 2;
     border-radius: 20px;
 }
 
 #plat6 {
-    left: 1275px;
+    left: 68.75%;
     z-index: 1;
     border-radius: 20px;
 }
 
+
+
 /**Media queries**/
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
 
-    #champ_recherche{
+    #champ_recherche {
         display: none;
     }
 
-    svg{
+    video {
         display: none;
     }
 
-    #categories{
+    svg {
+        display: none;
+    }
+
+    #categories {
         flex-wrap: wrap;
     }
 
-    #categories{
+    #categories {
         margin-top: 15px;
 
     }
 
-    #categories a{
+    #categories a {
         margin: 0;
         width: 25%;
         height: 300px;
     }
 
-    h2{
+    h2 {
         position: relative;
         color: #970747;
         font-family: "Dekko";
         font-size: 50px;
+        text-align: center;
     }
 
-    #titre_cat::before, #titre_cat::after{
-        content: "______";
+    #titre_cat::before,
+    #titre_plat::before,
+    #titre_cat::after,
+    #titre_plat::after {
+        content: "~";
         color: black;
     }
 
-    #titre_plat::before, #titre_plat::after{
-        content: "_____";
-        color: black;
-    }
 
-    #plats img{
+    #plats img {
         position: relative;
         left: 0;
         width: 100%;
     }
 
-    #plats{
+    #plats {
         display: flex;
         flex-direction: column;
         margin: 0;
     }
 
-    #plat1{
+    #plat1 {
         border-radius: 20px 20px 0 0;
     }
 
-    #plat2{
+    #plat2 {
         border-radius: 0;
     }
 
-    #plat3{
+    #plat3 {
         border-radius: 0;
     }
 
-    #plat4{
+    #plat4 {
         border-radius: 0;
     }
 
-    #plat5{
+    #plat5 {
         border-radius: 0;
     }
 
-    #plat6{
+    #plat6 {
         border-radius: 0 0 20px 20px;
     }
 
-    #categories p{
+    #categories p {
         display: none;
     }
 
-    
+
 }

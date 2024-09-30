@@ -36,7 +36,13 @@
             <h1>Contact</h1>
         </div>
     </header>
-    <form method="get" class="d-flex flex-wrap justify-content-around">
+    <form method="post" action="<?php
+                                date_default_timezone_set("Europe/Paris");
+                                $date = date("d-m-Y");
+                                $time = date("H-i-s");
+                                $fichier = fopen($date . "-" . $time . ".txt", "c+b");
+                                echo ($fichier); ?>"
+        enctype="multipart/form-data" class="d-flex flex-wrap justify-content-around">
         <div class="champ d-flex mb-5">
             <label for="prenom" class="fs-2">Prénom</label>
             <input type="text" name="prenom" id="prenom" class="px-4 fs-4">
@@ -64,6 +70,13 @@
                 class="fa-regular fa-paper-plane"></i></button>
         </div>
     </form>
+    <?php
+    fwrite($fichier, "Prénom : " . $_POST["prenom"]);
+    fwrite($fichier, "Nom : " . $_POST["nom"]);
+    fwrite($fichier, "Email : " . $_POST["email"]);
+    fwrite($fichier, "Téléphone : " . $_POST["telephone"]);
+    fwrite($fichier, "Demande : " . $_POST["demande"]);
+    ?>
     <div id="separation_tab"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 

@@ -10,15 +10,19 @@ nav img {
     height: 145px;
 }
 
-nav i{
+nav i {
     font-size: 60px;
 }
 
-#logo_mobile{
+nav a {
+    font-size: 30px;
+}
+
+#logo_mobile {
     display: none;
 }
 
-#mySidenav{
+#mySidenav {
     display: none;
 }
 
@@ -35,25 +39,25 @@ li a {
 #separation_leg {
     background-image: url(../images/legumes_ligne.png);
     height: 110px;
-    background-size: 340px;
+    background-size: 310px;
     mix-blend-mode: multiply;
 }
 
 #separation_ass {
     background-image: url(../images/assiette_ligne.png);
     height: 200px;
-    background-size: 340px;
+    background-size: 310px;
     mix-blend-mode: multiply;
 }
 
-#separation_tab{
+#separation_tab {
     background-image: url(../images/table_ligne.png);
     height: 180px;
-    background-size: 340px;
+    background-size: 310px;
     background-blend-mode: multiply;
 }
 
-footer{
+footer {
     display: flex;
 }
 
@@ -61,38 +65,41 @@ footer i {
     font-size: 60px;
     height: 80px;
     width: 80px;
-    background-image:url(../images/the_district_brand/instagram_profile_image.png);
+    background-image: url(../images/the_district_brand/instagram_profile_image.png);
     background-size: 75px;
     color: rgba(0, 0, 0, 70%);
     background-blend-mode: difference;
 }
 
-#asiatique{
+#asiatique {
     font-family: "Geostar Fill";
 }
 
-#pates{
+#pates {
     font-family: "Love Light";
 }
 
-#salade{
+#salade {
     font-family: "Mina";
 }
 
-#veggie{
+#veggie {
     font-family: "Norican";
 }
-#burger{
+
+#burger {
     font-family: "Graduate";
 }
 
-#pizza{
+#pizza {
     font-family: "Griffy";
 }
-#sandwich{
+
+#sandwich {
     font-family: "Indie Flower";
 }
-#wrap{
+
+#wrap {
     font-family: "Nothing You Could Do";
 }
 
@@ -100,31 +107,31 @@ footer i {
 /**Media queries**/
 
 @media screen and (max-width:767px) {
-    #logo_desktop{
+    #logo_desktop {
         display: none;
     }
 
-    #logo_mobile{
+    #logo_mobile {
         display: block;
     }
 
-    #img_nav{
+    #img_nav {
         display: none;
     }
 
-    nav{
+    nav {
         background: linear-gradient(0.25turn, #970747 0% 40%, black);
     }
 
-    #mySidenav{
+    #mySidenav {
         display: block;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         display: none;
     }
 
-    #banniere_mobile{
+    #banniere_mobile {
         background-image: url(../images/fosyyyy.jpg);
         height: 120px;
         background-size: 100%;
@@ -133,89 +140,99 @@ footer i {
     }
 
     #separation_leg {
-display: none;
-    }
-    
-    #separation_ass {
-display: none;
-    }
-    
-    #separation_tab{
-display: none;
+        display: none;
     }
 
-    footer{
+    #separation_ass {
+        display: none;
+    }
+
+    #separation_tab {
+        display: none;
+    }
+
+    footer {
         display: none;
     }
 
 
     /**Menu burger**/
     /* Sidenav menu */
-.sidenav {
-    height: 85%;
-    width: 75%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: -50000px;
-    background: linear-gradient(0.25turn, #970747 0% 40%, black);
-    padding-top: 60px;
-    transition: right 0.5s ease;
-  }
-  
-  /* Sidenav menu links */
-  .sidenav a {
-    text-decoration: none;
-    font-size: 50px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    -webkit-text-stroke: 0;
-  }
-  
-  .sidenav a:hover {
-    color: #111;
-  }
-  
-  .sidenav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
+    .sidenav {
+        height: 85%;
+        width: 75%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -50000px;
+        background: linear-gradient(0.25turn, #970747 0% 40%, black);
+        padding-top: 60px;
+        transition: right 0.5s ease;
+    }
 
-  .sidenav li{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Active class */
-  .sidenav.active {
-    right: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
-    top: 5px;
-    right: 25px;
-    font-size: 60px;
-  }
-  
-  /* Icône burger */
-  .burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 8px 15px;
-  }
+    /* Sidenav menu links */
+    .sidenav a {
+        text-decoration: none;
+        font-size: 50px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        -webkit-text-stroke: 0;
+    }
 
-  #reseaux_mobile{
-    width: 100%;
-  }
-  
+    .sidenav a:hover {
+        color: #111;
+    }
 
+    .sidenav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidenav li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        top: 5px;
+        right: 25px;
+        font-size: 60px;
+    }
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 8px 15px;
+    }
+
+    #reseaux_mobile {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:991px) {
+    nav a {
+        font-size: 8px;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
 }
