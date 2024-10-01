@@ -4,7 +4,8 @@
     ;
     background-size: 310px;
     height: 160px;
-    background-blend-mode: multiply
+    background-blend-mode: multiply;
+    font-family: "Farsan"
 }
 
 #background-video {
@@ -33,11 +34,12 @@ h2::before {
 h2 {
     color: #47B4D1;
     position: absolute;
-
+    font-family: "Gwendolyn";
+    font-size: 60px;
 }
 
 svg {
-    height: 150px;
+    height: 180px;
 }
 
 #categories a {

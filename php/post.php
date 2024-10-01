@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - The District</title>
+    <title>Demande envoyée - The District</title>
     <script src="https://kit.fontawesome.com/694d251a11.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -37,35 +37,21 @@
             <h1>Contact</h1>
         </div>
     </header>
-    <form method="post" action="post.php"
-        enctype="multipart/form-data" class="d-flex flex-wrap justify-content-around">
-        <div class="champ d-flex mb-5">
-            <label for="prenom" class="fs-2">Prénom</label>
-            <input type="text" name="prenom" id="prenom" class="px-4 fs-4">
-        </div>
-        <div class="champ d-flex mb-5">
-            <label for="nom" class="obligatoire fs-2">Nom</label>
-            <input type="text" name="nom" id="nom" placeholder="Champ obligatoire" class="px-4 fs-4" required>
-        </div>
-        <div class="champ d-flex mb-5">
-            <label for="email" class="fs-2">Email</label>
-            <input type="text" name="email" id="email" class="px-4 fs-4">
-        </div>
-        <div class="champ d-flex mb-5">
-            <label for="telephone" class="obligatoire fs-2">Téléphone</label>
-            <input type="text" name="telephone" id="telephone" placeholder="Champ obligatoire" class="px-4 fs-4" required>
-        </div>
-        <div class="champ d-flex flex-column mb-5" id="last">
-            <label for="demande" class="fs-2">Votre demande</label>
-            <textarea id="demande" name="demande" class="px-5 fs-4"></textarea>
-        </div>
-        <p id="champ_obligatoire">* Champs obligatoires</p>
-        <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4" onclick="verif_contact()">
-        <button type="submit" id="envoi_mobile"
-            class="border-0 rounded-circle align-items-center justify-content-center mb-3" onclick="verif_contact()"><i
-                class="fa-regular fa-paper-plane"></i></button>
-        </div>
-    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="recap_form">
+<h2 class="my-5 text-center">Votre demande a été envoyée avec succès !</h2>
+<h3 class="ms-4">Récapulatif de votre demande :</h3>
+<ul id="liste_recap_form" class="ms-5">
+    <li>Votre prénom : <?php echo ($_POST["prenom"]); ?></li>
+    <li>Votre nom : <?php echo ($_POST["nom"]); ?></li>
+    <li>Votre email : <?php echo ($_POST["email"]); ?></li>
+    <li>Votre téléphone : <?php echo ($_POST["telephone"]); ?></li>
+    <li>Votre demande : <?php echo ($_POST["demande"]); ?></li>
+</ul>
+    </div>
     <div id="separation_tab"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
@@ -73,3 +59,20 @@
 </body>
 
 </html>
+
+
+
+
+
+
+<?php
+date_default_timezone_set("Europe/Paris");
+$date = date("d-m-Y");
+$time = date("H-i-s");
+$fichier = fopen($date . "-" . $time . ".txt", "c+b");
+fwrite($fichier, "Prénom : " . $_POST["prenom"]);
+fwrite($fichier, "\nNom : " . $_POST["nom"]);
+fwrite($fichier, "\nEmail : " . $_POST["email"]);
+fwrite($fichier, "\nTéléphone : " . $_POST["telephone"]);
+fwrite($fichier, "\nDemande : " . $_POST["demande"]);
+?>

@@ -493,6 +493,24 @@ input[type=number] {
 }
 
 
+#recap_form h2{
+    font-family: "Modern Antiqua";
+    font-size: 50px;
+}
+
+#recap_form h3{
+    font-family: "Modern Antiqua";
+    font-size: 45px;
+}
+
+#liste_recap_form li{
+    height: auto;
+    font-family: "Farsan";
+    font-size: 40px;
+    width: 100%;
+}
+
+
 /**Media queries**/
 
 @media screen and (max-width:767px) {
