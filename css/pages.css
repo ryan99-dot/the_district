@@ -155,7 +155,10 @@
 
 .des_com {
     height: 70%;
-    display: flex;
+    display: none;
+}
+
+.closed {
     display: none;
 }
 

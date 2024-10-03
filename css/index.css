@@ -108,15 +108,6 @@ svg {
 }
 
 
-#categories img {
-    width: 100%;
-    height: 600px;
-}
-
-#categories img:hover {
-    transform: scale(1.2);
-}
-
 .up {
     margin-bottom: 250px;
 }

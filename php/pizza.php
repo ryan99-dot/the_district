@@ -32,36 +32,36 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Pizza margherita</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Sauce tomate, mozzarella, tomates et basilic</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/pizza_merguez.jpg" alt="Pizza merguez" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Pizza merguez</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs2">Sauce tomate, mozzarella, merguez, tomates, olives et
+                <p class="description text-center fs-2">Sauce tomate, mozzarella, merguez, tomates, olives et
                     basilic</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/pizza_salmon.png" alt="Pizza nordique" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Pizza nordique</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Crème fraîche, saumon, jus de citron et jeunes pousses
                 </p>
@@ -69,12 +69,13 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div id="separation_ass"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/menu_burger.js"></script>
+    <script src="../javascript/plats.js"></script>
 </body>
 
 </html>

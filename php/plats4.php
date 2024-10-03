@@ -28,14 +28,14 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Grilled cheese</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Pain de mie toasté, fromages et moutarde américaine</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/courgettes_farcies.jpg" alt="Courgettes farcies" id="courgettes"
@@ -43,35 +43,35 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Courgettes farcies veggie</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Courgettes, riz, haché végétal et champignons</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/tarte_veggie.jpg" alt="Tarte veggie" id="tarte" class="object-fit-cover">
         <div class="tout d-flex">
         <p class="titre_plat text-center">Tarte veggie</p>
         <hr class="shadow">
-        <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="des_com flex-column align-items-center">
             <p class="description text-center fs-2">Crème fraîche, épinards et jeunes pousses</p>
             <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                 <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
         </div>
     </div>
-    <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/buffalo_chicken.webp" alt="Buffalo chicken" class="object-fit-cover" id="buffalo">
         <div class="tout d-flex">
         <p class="titre_plat text-center">Buffalo chicken</p>
         <hr class="shadow">
-        <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+        <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="des_com flex-column align-items-center">
             <p class="description text-center fs-2">Tortilla de blé, poulet façon wings, salade, carotte,
                 avocat, fromage frais et tabasco</p>
@@ -79,7 +79,7 @@
                 <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
                 </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div id="boutons" class="d-flex justify-content-around my-5">
         <svg viewBox="0 -20 200 100" xmlns="http://www.w3.org/2000/svg" class="position-absolute">
@@ -99,7 +99,8 @@
     <div id="separation_ass"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/menu_burger.js"></script>
+    <script src="../javascript/plats.js"></script>
 </body>
 
 </html>

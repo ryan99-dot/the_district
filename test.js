@@ -14,26 +14,40 @@ function closeNav() {
 }**/
 
 
-/**let op = document.getElementById("open");
-let des = document.getElementById("des");
-let cl = document.getElementById("close")**/
+/*let op = document.getElementById("open");
+let des = document.getElementById("des_com");
+let cl = document.getElementById("close");
 
+console.log (op)
+console.log (des)
+console.log(cl)
+
+op.addEventListener("click", openchevron)
+cl.addEventListener("click", closechevron)
+
+function openchevron(){
+  op.style.display = "none"
+  des.style.display = "block"
+  cl.style.display = "block"
+}
+
+function closechevron(){
+  op.style.display = "block"
+  des.style.display = "none"
+  cl.style.display = "none"
+}*/
 
 let op = document.getElementsByClassName("open")
 let des = document.getElementsByClassName("des_com")
 let cl = document.getElementsByClassName("close")
 
-console.log(op)
-console.log(des)
-console.log(cl)
-
-
-
-/*for (i = 0; i < des.length; i++)
-{
-  op[i].onclick = openchevron(i)
-  cl[i].onclick = closechevron(i)
-  
+for (let i = 0; i < des.length; i++) {
+  op[i].addEventListener("click", function() {
+    openchevron(i);
+  });
+  cl[i].addEventListener("click", function() {
+    closechevron(i);
+  });
 }
 
 function openchevron(n) {
@@ -46,32 +60,4 @@ function closechevron(n) {
   des[n].style.display = "none"
   op[n].style.display = "block"
   cl[n].style.display = "none"
-}*/
-
-
-  
-  function openchevron(n) {
-    des[n].style.display = "block"
-    op[n].style.display = "none"
-    cl[n].style.display = "block"
-    console.log (op[n])
-  }
-  
-  function closechevron(n) {
-    des[n].style.display = "none"
-    op[n].style.display = "block"
-    cl[n].style.display = "none"
-  }
-
-  for (i = 0; i < des.length; i++)
-    {
-      op[i].addEventListener("click", openchevron(i))
-      cl[i].addEventListener("click", closechevron(i))
-      console.log (op[i])
-    }
-
-
-
-
-
-
+}

@@ -27,12 +27,13 @@
             <h1 id="burger" class="z-3 position-absolute">Burger</h1>
         </div>
     </header>
+
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/big_burger.jpeg" alt="Big Burger" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Big burger</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate, oignons
                     cuits et mayonnaise</p>
@@ -40,14 +41,15 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
+
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/burger_gourmet.jpg" alt="Burger Gourmet" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Burger gourmet</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak façon bouchère, salade, cornichon,
                     oignons caramélisés et sauce burger</p>
@@ -55,14 +57,15 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
+
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/cheesburger.jpg" alt="Cheeseburger" id="cheeseburger" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Cheeseburger</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak façon bouchère, 2 tranches de cheddar,
                     bacon et sauce BBQ</p>
@@ -70,14 +73,15 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
+
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/bacon_cheeseburger.jpg" alt="Bacon Cheeseburger" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Bacon cheeseburger</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Bun brioché, steak, cheddar, salade, tomate et moutarde
                 </p>
@@ -85,12 +89,15 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
+
     <div id="separation_ass"></div>
+
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/menu_burger.js"></script>
+    <script src="../javascript/plats.js"></script>
 </body>
 
 </html>

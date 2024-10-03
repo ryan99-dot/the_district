@@ -28,11 +28,11 @@
         </div>
     </header>
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../images/food/salade_ceasar.jpg" alt="Salade Caesar" class="object-fit-cover">
+        <img src="../images/food/salade_ceasar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Salade Caesar</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Salade, poulet grillé, tomates cerises, croûtons et sauce
                     Caesar</p>
@@ -40,14 +40,14 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/salade_poulet.png" alt="Salade" class="object-fit-cover bg-secondary">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Salade au poulet</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Salade, poulet grillé, concombre, maïs, tomates
                     cerises
@@ -56,12 +56,13 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div id="separation_ass"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/menu_burger.js"></script>
+    <script src="../javascript/plats.js"></script>
 </body>
 
 </html>

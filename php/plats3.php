@@ -28,7 +28,7 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Pizza merguez</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Sauce tomate, mozzarella, merguez, tomates, olives et
                     basilic</p>
@@ -36,14 +36,14 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/pizza_salmon.png" alt="Pizza nordique" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Pizza nordique</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Crème fraîche, saumon, jus de citron et jeunes pousses
                 </p>
@@ -51,14 +51,14 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/salade_ceasar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Salade Caesar</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Salade, poulet grillé, tomates cerises, croûtons et sauce
                     Caesar</p>
@@ -66,14 +66,14 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/salade_poulet.png" alt="Salade" class="object-fit-cover bg-secondary">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Salade au poulet</p>
             <hr class="shadow">
-            <button class="chevron border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center fs-2">Salade, poulet grillé, concombre, maïs, tomates
                     cerises
@@ -82,7 +82,7 @@
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
         </div>
-        <button class="chevron border-0 bg-transparent d-none"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
     </div>
     <div id="boutons" class="d-flex justify-content-around my-5">
         <svg viewBox="0 -20 200 100" xmlns="http://www.w3.org/2000/svg" class="position-absolute">
@@ -102,7 +102,8 @@
     <div id="separation_ass"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/menu_burger.js"></script>
+    <script src="../javascript/plats.js"></script>
 </body>
 
 </html>

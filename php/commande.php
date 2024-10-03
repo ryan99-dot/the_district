@@ -91,7 +91,8 @@
     <div id="separation_tab"></div>
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <script src="../javascript/script.js"></script>
+    <script src="../javascript/menu_burger.js"></script>
+    <script src="../javascript/verif_form.js"></script>
 </body>
 
 </html>
