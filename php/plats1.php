@@ -26,11 +26,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/big_burger.jpeg" alt="Big Burger" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Big burger</p>
+            <p class="titre_plat">Big burger</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate, oignons
+                <p class="description">2 steaks, 2 tranches de cheddar, salade, tomate, oignons
                     cuits et mayonnaise</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -41,11 +41,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/burger_gourmet.jpg" alt="Burger Gourmet" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Burger gourmet</p>
+            <p class="titre_plat">Burger gourmet</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Bun brioché, steak façon bouchère, salade, cornichon,
+                <p class="description">Bun brioché, steak façon bouchère, salade, cornichon,
                     oignons caramélisés et sauce burger</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -56,11 +56,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/cheesburger.jpg" alt="Cheeseburger" id="cheeseburger" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Cheeseburger</p>
+            <p class="titre_plat">Cheeseburger</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Bun brioché, steak façon bouchère, 2 tranches de cheddar,
+                <p class="description">Bun brioché, steak façon bouchère, 2 tranches de cheddar,
                     bacon et sauce BBQ</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -71,11 +71,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/bacon_cheeseburger.jpg" alt="Bacon Cheeseburger" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Bacon cheeseburger</p>
+            <p class="titre_plat">Bacon cheeseburger</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Bun brioché, steak, cheddar, salade, tomate et moutarde
+                <p class="description">Bun brioché, steak, cheddar, salade, tomate et moutarde
                 </p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>

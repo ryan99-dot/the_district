@@ -26,11 +26,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/wrap_caesar.jpg" alt="Wrap Caesar" class="object-fit-cover">
         <div class="tout d-flex">
-        <p class="titre_plat text-center">Wrap Caesar</p>
+        <p class="titre_plat">Wrap Caesar</p>
         <hr class="shadow">
         <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="des_com flex-column align-items-center">
-            <p class="description text-center fs-2">Tortilla de blé, poulet grillé, parmesan, salade, tomates
+            <p class="description">Tortilla de blé, poulet grillé, parmesan, salade, tomates
                 et sauce Caesar</p>
             <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                 <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>

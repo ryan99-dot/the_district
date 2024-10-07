@@ -1,3 +1,9 @@
+p {
+    margin: 0;
+
+}
+
+
 /**Les différentes entête de lignes continues**/
 
 #entete_leg {
@@ -111,7 +117,7 @@
     width: 50%;
     height: 300px;
     box-shadow: 20px 0px 10px rgb(0, 0, 0, 20%);
-    margin: 48px;
+    margin: 48px 0px 48px 1%;
     border-radius: 50rem;
 }
 
@@ -122,9 +128,11 @@
 }
 
 .titre_plat {
-    font-size: 55px;
+    font-size: 50px;
     font-family: "Modern Antiqua";
     color: white;
+    vertical-align: middle;
+    overflow-wrap: break-word;
 }
 
 .plat i {
@@ -135,18 +143,21 @@
     height: 100%;
     font-family: "Farsan";
     color: white;
+    font-size: 40px;
 }
 
 .tout {
     width: 100%;
     justify-content: space-between;
     margin-left: 20px;
+    margin-right: 30px;
+    align-items: center;
 }
 
 .commander {
     background-color: #47B4D1;
     font-family: "Julius Sans One";
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .commander_mobile {
@@ -204,13 +215,13 @@ hr {
 /**Modif image de la page plats3.html**/
 
 #salade_caesar {
-    width: 450px;
+    min-width: 300px;
 }
 
 /**Modif image de la page plats4.html**/
 
 #courgettes {
-    width: 450px;
+    min-width: 300px;
 }
 
 #tarte {
@@ -218,7 +229,7 @@ hr {
 }
 
 #buffalo {
-    width: 450px;
+    min-width: 300px;
 }
 
 /**Entête des pages plats par catégorie**/
@@ -359,6 +370,13 @@ svg {
     background-color: rgba(0, 0, 0, 34%);
 }
 
+#retour_form {
+    width: 40%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 34%);
+    font-family: 'Julius Sans One';
+}
+
 ::placeholder {
     color: rgba(255, 0, 0, 50%);
 }
@@ -379,7 +397,8 @@ svg {
 }
 
 label,
-input {
+input,
+textarea {
     font-family: "Julius Sans One";
 }
 
@@ -496,17 +515,17 @@ input[type=number] {
 }
 
 
-#recap_form h2{
+#recap_form h2 {
     font-family: "Modern Antiqua";
     font-size: 50px;
 }
 
-#recap_form h3{
+h3 {
     font-family: "Modern Antiqua";
     font-size: 45px;
 }
 
-#liste_recap_form li{
+#liste_recap_form li {
     height: auto;
     font-family: "Farsan";
     font-size: 40px;
@@ -598,9 +617,8 @@ input[type=number] {
         height: 25%;
         margin: 0;
         color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+        vertical-align: center;
         line-height: 35px;
         -webkit-text-stroke: 1px #970747;
     }
@@ -633,6 +651,7 @@ input[type=number] {
     .description {
         height: auto;
         color: black;
+        font-size: 25px;
     }
 
     hr {
@@ -644,8 +663,8 @@ input[type=number] {
         width: 100%;
     }
 
-    #courgettes {
-        width: 50%;
+    #courgettes, #salade_caesar, #buffalo {
+        min-width: 50%;
     }
 
     .prec_desktop,
@@ -686,6 +705,7 @@ input[type=number] {
         flex-direction: column;
     }
 
+
     .recap_com {
         width: 50%;
         margin: 0;
@@ -698,7 +718,7 @@ input[type=number] {
     .qt_plat {
         background: radial-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0));
         padding: 0;
-        margin: 0;
+        margin: 0 0 5px 10px;
         height: 25%;
     }
 
@@ -737,6 +757,7 @@ input[type=number] {
 
     .titre_des .description {
         height: 50%;
+        font-size: 25px;
     }
 
     ::placeholder {
@@ -766,7 +787,7 @@ input[type=number] {
         color: #970747;
     }
 
-    .obligatoire::after {
+    .champ label::after {
         content: "*";
     }
 
@@ -833,6 +854,15 @@ input[type=number] {
         font-size: 45px;
     }
 
+    h3 {
+        font-size: 25px;
+    }
+
+    #retour_form {
+        width: 95%;
+        height: 80px;
+        margin-bottom: 45px;
+    }
 }
 
 
@@ -900,4 +930,63 @@ input[type=number] {
         font-size: 190px;
     }
 
+    #retour_form {
+        width: 48%;
+    }
+
+        
+    .titre_plat{
+        font-size: 25px;
+    }
+
+    .description{
+        font-size: 20px;
+    }
+
+    .commander{
+        font-size: 20px;
+    }
+
+    .plat{
+        height: 150px;
+    }
+
+    .plat img{
+        height: 150px;
+        width: 150px;
+    }
+
+    #salade_caesar, #courgettes, #buffalo{
+        min-width: 150px;
+    }
+
+}
+
+
+@media screen and (min-width:992px) and (max-width:1399px) {
+    
+    .titre_plat{
+        font-size: 35px;
+    }
+
+    .description{
+        font-size: 25px;
+    }
+
+    .commander{
+        font-size: 25px;
+    }
+
+    .plat{
+        height: 200px;
+    }
+
+    .plat img{
+        height: 200px;
+        width: 200px;
+    }
+
+    #salade_caesar, #courgettes, #buffalo{
+        min-width: 200px;
+    }
 }

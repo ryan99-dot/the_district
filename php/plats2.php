@@ -26,11 +26,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/lasagnes_viande.jpg" alt="Lasagnes" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Lasagnes</p>
+            <p class="titre_plat">Lasagnes</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Pâtes lasagne, viande hachée, sauce tomate, béchamel,
+                <p class="description">Pâtes lasagne, viande hachée, sauce tomate, béchamel,
                     oignons, carottes et fromages</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -42,11 +42,11 @@
         <img src="../images/food/spaghetti_legumes.jpg" alt="Spaghetti aux légumes" id="spa_leg"
             class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Spaghetti aux légumes</p>
+            <p class="titre_plat">Spaghetti aux légumes</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Spaghettis, poivrons,sauce tomate et oignons</p>
+                <p class="description">Spaghettis, poivrons,sauce tomate et oignons</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
@@ -56,10 +56,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/tagliatelles_saumon.webp" alt="Tagliatelles au saumon" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Tagliatelles au saumon</p>
+            <p class="titre_plat">Tagliatelles au saumon</p>
+            <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Tagliatelles, saumon et crème fraîche</p>
+                <p class="description">Tagliatelles, saumon et crème fraîche</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>
@@ -69,11 +70,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/pizza_margherita.jpg" alt="Pizza margherita" id="margherita" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Pizza margherita</p>
+            <p class="titre_plat">Pizza margherita</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Sauce tomate, mozzarella, tomates et basilic</p>
+                <p class="description">Sauce tomate, mozzarella, tomates et basilic</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
             </div>

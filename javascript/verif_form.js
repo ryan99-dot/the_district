@@ -46,13 +46,26 @@ function verif_commande() {
 }
 
 function verif_contact(){
+  let prenom = document.getElementById("prenom").value;
   let nom = document.getElementById("nom").value;
+  let email = document.getElementById("email").value;
   let telephone = document.getElementById("telephone").value;
+  let demande = document.getElementById("demande").value;
+
+  if (filtre_caractere.test(prenom) == false) {
+    alert("Entrez votre prénom")
+  }
   if (filtre_caractere.test(nom) == false) {
     alert("Entrez votre nom")
   }
+  if (filtre_email.test(email) == false) {
+    alert("Entrez une adresse mail valide")
+  }
   if (filtre_telephone.test(telephone) == false) {
     alert("Entrez votre numéro de tépléhone")
+  }
+  if (!demande || /^\s*$/.test(demande)){
+    alert("Ecivez votre demande")
   }
 
 }

@@ -19,14 +19,14 @@ function openchevron(n) {
   des[n].style.display = "flex"
   op[n].style.display = "none"
   cl[n].style.display = "block"
-  pl[n].style.width = "95%"
+  pl[n].style.width = "98%"
 }
 
 function closechevron(n) {
   des[n].style.display = "none"
   op[n].style.display = "block"
   cl[n].style.display = "none"
-    pl[n].style.width = "50%"
+  pl[n].style.width = "50%"
 }
 
 

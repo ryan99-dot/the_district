@@ -26,11 +26,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/pizza_merguez.jpg" alt="Pizza merguez" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Pizza merguez</p>
+            <p class="titre_plat">Pizza merguez</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Sauce tomate, mozzarella, merguez, tomates, olives et
+                <p class="description">Sauce tomate, mozzarella, merguez, tomates, olives et
                     basilic</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -41,11 +41,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/pizza_salmon.png" alt="Pizza nordique" class="object-fit-cover">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Pizza nordique</p>
+            <p class="titre_plat">Pizza nordique</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Crème fraîche, saumon, jus de citron et jeunes pousses
+                <p class="description">Crème fraîche, saumon, jus de citron et jeunes pousses
                 </p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -56,11 +56,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/salade_ceasar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Salade Caesar</p>
+            <p class="titre_plat">Salade Caesar</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Salade, poulet grillé, tomates cerises, croûtons et sauce
+                <p class="description">Salade, poulet grillé, tomates cerises, croûtons et sauce
                     Caesar</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
                     <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
@@ -71,11 +71,11 @@
     <div class="plat d-flex align-items-center justify-content-between">
         <img src="../images/food/salade_poulet.png" alt="Salade" class="object-fit-cover bg-secondary">
         <div class="tout d-flex">
-            <p class="titre_plat text-center">Salade au poulet</p>
+            <p class="titre_plat">Salade au poulet</p>
             <hr class="shadow">
             <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Salade, poulet grillé, concombre, maïs, tomates
+                <p class="description">Salade, poulet grillé, concombre, maïs, tomates
                     cerises
                     et vinaigrette</p>
                 <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>

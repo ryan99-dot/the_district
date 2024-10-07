@@ -41,7 +41,7 @@
         enctype="multipart/form-data" class="d-flex flex-wrap justify-content-around">
         <div class="champ d-flex mb-5">
             <label for="prenom" class="fs-2">Prénom</label>
-            <input type="text" name="prenom" id="prenom" class="px-4 fs-4">
+            <input type="text" name="prenom" id="prenom" placeholder="Champ obligatoire" class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5">
             <label for="nom" class="obligatoire fs-2">Nom</label>
@@ -49,7 +49,7 @@
         </div>
         <div class="champ d-flex mb-5">
             <label for="email" class="fs-2">Email</label>
-            <input type="text" name="email" id="email" class="px-4 fs-4">
+            <input type="text" name="email" id="email" placeholder="Champ obligatoire" class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5">
             <label for="telephone" class="obligatoire fs-2">Téléphone</label>
@@ -57,7 +57,7 @@
         </div>
         <div class="champ d-flex flex-column mb-5" id="last">
             <label for="demande" class="fs-2">Votre demande</label>
-            <textarea id="demande" name="demande" class="px-5 fs-4"></textarea>
+            <textarea id="demande" name="demande" placeholder="Champ obligatoire" class="px-5 fs-4" required></textarea>
         </div>
         <p id="champ_obligatoire">* Champs obligatoires</p>
         <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4" onclick="verif_contact()">
