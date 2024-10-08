@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - The District</title>
     <script src="https://kit.fontawesome.com/694d251a11.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Geostar+Fill&family=Graduate&family=Griffy&family=Gwendolyn:wght@400;700&family=Indie+Flower&family=Julius+Sans+One&family=Love+Light&family=Mina:wght@400;700&family=Modern+Antiqua&family=Norican&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Geostar+Fill&family=Graduate&family=Griffy&family=Gwendolyn:wght@400;700&family=Indie+Flower&family=Julius+Sans+One&family=Love+Light&family=Mina:wght@400;700&family=Modern+Antiqua&family=Norican&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -37,8 +36,8 @@
             <h1>Contact</h1>
         </div>
     </header>
-    <form method="post" action="post.php"
-        enctype="multipart/form-data" class="d-flex flex-wrap justify-content-around">
+
+    <form method="post" action="post_contact.php" enctype="multipart/form-data" class="d-flex flex-wrap justify-content-around">
         <div class="champ d-flex mb-5">
             <label for="prenom" class="fs-2">Prénom</label>
             <input type="text" name="prenom" id="prenom" placeholder="Champ obligatoire" class="px-4 fs-4" required>
@@ -61,12 +60,13 @@
         </div>
         <p id="champ_obligatoire">* Champs obligatoires</p>
         <input type="submit" value="Envoyer" id="bouton" class="fs-2 border-0 rounded-4" onclick="verif_contact()">
-        <button type="submit" id="envoi_mobile"
-            class="border-0 rounded-circle align-items-center justify-content-center mb-3" onclick="verif_contact()"><i
-                class="fa-regular fa-paper-plane"></i></button>
-        </div>
+        <button type="submit" id="envoi_mobile" class="border-0 rounded-circle align-items-center justify-content-center mb-3" onclick="verif_contact()">
+            <i class="fa-regular fa-paper-plane"></i>
+        </button>
     </form>
+
     <div id="separation_tab"></div>
+
     <?php require_once(__DIR__ . "/footer.php"); ?>
 
     <script src="../javascript/menu_burger.js"></script>

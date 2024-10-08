@@ -1,6 +1,5 @@
 p {
     margin: 0;
-
 }
 
 
@@ -31,6 +30,7 @@ p {
     display: flex;
 }
 
+
 /**Catégories de la page catégorie.html**/
 
 .photo_cat {
@@ -42,7 +42,6 @@ p {
     font-size: 65px;
     width: 25%;
 }
-
 
 .categorie_l {
     background-color: rgb(71, 180, 209, 60%);
@@ -65,17 +64,13 @@ p {
     font-size: 40px;
 }
 
-
 #pates img {
     object-position: 100% 70%;
 }
 
-
 #salade img {
     object-position: 100% 55%;
 }
-
-
 
 #veggie img {
     object-position: 100% 68%;
@@ -94,21 +89,18 @@ p {
     border-radius: 20px 0 0 20px;
 }
 
-
 #pizza img {
     object-position: 100% 40%;
 }
-
-
 
 #sandwich img {
     object-position: 100% 10%;
 }
 
-
 #wrap img {
     object-position: 100% 55%;
 }
+
 
 /**Plat des pages plats(n).html**/
 
@@ -177,6 +169,7 @@ hr {
     display: none;
 }
 
+
 /**Boutons suivant et précédent des pages plats(n).html**/
 
 #boutons button {
@@ -196,13 +189,15 @@ hr {
     display: none;
 }
 
+
 /**Modif image de la page plats1.html**/
 
 #cheeseburger {
     object-position: 100%;
 }
 
-/**Modif image de la page plats2.html*/
+
+/**Modif images de la page plats2.html*/
 
 #spa_leg {
     object-position: 0%;
@@ -212,13 +207,15 @@ hr {
     object-position: 25%;
 }
 
+
 /**Modif image de la page plats3.html**/
 
 #salade_caesar {
     min-width: 300px;
 }
 
-/**Modif image de la page plats4.html**/
+
+/**Modif images de la page plats4.html**/
 
 #courgettes {
     min-width: 300px;
@@ -232,6 +229,7 @@ hr {
     min-width: 300px;
 }
 
+
 /**Entête des pages plats par catégorie**/
 
 h1 {
@@ -239,6 +237,7 @@ h1 {
     -webkit-text-stroke: 5px black;
     font-size: 230px;
 }
+
 
 /**Entête de la page burger.html**/
 
@@ -253,6 +252,7 @@ h1 {
     background-attachment: fixed;
 }
 
+
 /**Entête de la page pates.html**/
 
 #entete_pates {
@@ -265,6 +265,7 @@ h1 {
     width: 100%;
     background-attachment: fixed;
 }
+
 
 /**Entête de la page pizza.html**/
 
@@ -279,6 +280,7 @@ h1 {
     background-attachment: fixed;
 }
 
+
 /**Entête de la page salade.html**/
 
 #entete_salade {
@@ -291,6 +293,7 @@ h1 {
     width: 100%;
     background-attachment: fixed;
 }
+
 
 /**Entête de la page sandwich.html**/
 
@@ -305,6 +308,7 @@ h1 {
     background-attachment: fixed;
 }
 
+
 /**Entête de la page veggie.html**/
 
 #entete_veggie {
@@ -318,6 +322,7 @@ h1 {
     background-attachment: fixed;
 }
 
+
 /**Entête de la page wrap.html**/
 
 #entete_wrap {
@@ -330,6 +335,7 @@ h1 {
     width: 100%;
     background-attachment: fixed;
 }
+
 
 /**Page contact.html**/
 
@@ -536,8 +542,6 @@ h3 {
 /**Media queries**/
 
 @media screen and (max-width:767px) {
-
-
     #entete_ass,
     #entete_leg,
     #entete_tab {
@@ -600,7 +604,6 @@ h3 {
         display: flex;
         height: 75%;
         justify-content: space-between;
-
     }
 
     .plat img {
@@ -663,7 +666,9 @@ h3 {
         width: 100%;
     }
 
-    #courgettes, #salade_caesar, #buffalo {
+    #courgettes,
+    #salade_caesar,
+    #buffalo {
         min-width: 50%;
     }
 
@@ -678,12 +683,10 @@ h3 {
         z-index: 1;
     }
 
-
     #boutons svg {
         display: block;
         height: 150px;
     }
-
 
     #commande {
         background-image: none;
@@ -704,7 +707,6 @@ h3 {
     .titre_des {
         flex-direction: column;
     }
-
 
     .recap_com {
         width: 50%;
@@ -839,8 +841,6 @@ h3 {
         margin-top: 50px
     }
 
-    ;
-
     #last {
         width: 100%;
     }
@@ -934,59 +934,60 @@ h3 {
         width: 48%;
     }
 
-        
-    .titre_plat{
+    .titre_plat {
         font-size: 25px;
     }
 
-    .description{
+    .description {
         font-size: 20px;
     }
 
-    .commander{
+    .commander {
         font-size: 20px;
     }
 
-    .plat{
+    .plat {
         height: 150px;
     }
 
-    .plat img{
+    .plat img {
         height: 150px;
         width: 150px;
     }
 
-    #salade_caesar, #courgettes, #buffalo{
+    #salade_caesar,
+    #courgettes,
+    #buffalo {
         min-width: 150px;
     }
-
 }
 
 
 @media screen and (min-width:992px) and (max-width:1399px) {
-    
-    .titre_plat{
+    .titre_plat {
         font-size: 35px;
     }
 
-    .description{
+    .description {
         font-size: 25px;
     }
 
-    .commander{
+    .commander {
         font-size: 25px;
     }
 
-    .plat{
+    .plat {
         height: 200px;
     }
 
-    .plat img{
+    .plat img {
         height: 200px;
         width: 200px;
     }
 
-    #salade_caesar, #courgettes, #buffalo{
+    #salade_caesar,
+    #courgettes,
+    #buffalo {
         min-width: 200px;
     }
 }

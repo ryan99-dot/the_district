@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger - The District</title>
     <script src="https://kit.fontawesome.com/694d251a11.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/pages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,15 +32,20 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Big burger</p>
             <hr class="shadow">
-            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate, oignons
-                    cuits et mayonnaise</p>
-                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
-                    <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+                <p class="description text-center fs-2">2 steaks, 2 tranches de cheddar, salade, tomate, oignons cuits et mayonnaise</p>
+                <a href="commande.php">
+                    <button class="commander border-0 rounded-2 px-5">Commander</button>
+                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
+                </a>
             </div>
         </div>
-        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
@@ -49,15 +53,20 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Burger gourmet</p>
             <hr class="shadow">
-            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Bun brioché, steak façon bouchère, salade, cornichon,
-                    oignons caramélisés et sauce burger</p>
-                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
-                    <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+                <p class="description text-center fs-2">Bun brioché, steak façon bouchère, salade, cornichon, oignons caramélisés et sauce burger</p>
+                <a href="commande.php">
+                    <button class="commander border-0 rounded-2 px-5">Commander</button>
+                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
+                </a>
             </div>
         </div>
-        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
@@ -65,15 +74,20 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Cheeseburger</p>
             <hr class="shadow">
-            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Bun brioché, steak façon bouchère, 2 tranches de cheddar,
-                    bacon et sauce BBQ</p>
-                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
-                    <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+                <p class="description text-center fs-2">Bun brioché, steak façon bouchère, 2 tranches de cheddar, bacon et sauce BBQ</p>
+                <a href="commande.php">
+                    <button class="commander border-0 rounded-2 px-5">Commander</button>
+                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
+                </a>
             </div>
         </div>
-        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
@@ -81,15 +95,20 @@
         <div class="tout d-flex">
             <p class="titre_plat text-center">Bacon cheeseburger</p>
             <hr class="shadow">
-            <button class="chevron open border-0 bg-transparent"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="chevron open border-0 bg-transparent">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
             <div class="des_com flex-column align-items-center">
-                <p class="description text-center fs-2">Bun brioché, steak, cheddar, salade, tomate et moutarde
-                </p>
-                <a href="commande.php"><button class="commander border-0 rounded-2 px-5">Commander</button>
-                    <button class="commander_mobile border-0 rounded-circle px-2">+</button></a>
+                <p class="description text-center fs-2">Bun brioché, steak, cheddar, salade, tomate et moutarde</p>
+                <a href="commande.php">
+                    <button class="commander border-0 rounded-2 px-5">Commander</button>
+                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
+                </a>
             </div>
         </div>
-        <button class="chevron closed border-0 bg-transparent"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="chevron closed border-0 bg-transparent">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
     </div>
 
     <div id="separation_ass"></div>

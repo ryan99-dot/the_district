@@ -23,7 +23,7 @@
         <div id="entete_tab"></div>
         <div id="banniere_mobile"></div>
     </header>
-    <form id="commande" method="get" class="d-flex flex-wrap justify-content-around mt-5">
+    <form id="commande" method="post" action="post_commande.php" class="d-flex flex-wrap justify-content-around mt-5">
         <div class="plats_commande d-flex">
             <img src="../images/food/big_burger.jpeg" alt="Big Burger" class="object-fit-cover">
             <div class="recap_com d-flex flex-column justify-content-between bg-transparent">
@@ -61,7 +61,7 @@
         </div>
         <div class="champ d-flex mb-5">
             <label for="telephone" class="obligatoire fs-2">Téléphone</label>
-            <input type="text" name="telphone" id="telephone" placeholder="Champ obligatoire"
+            <input type="text" name="telephone" id="telephone" placeholder="Champ obligatoire"
                 class="px-4 fs-4" required>
         </div>
         <div class="champ d-flex mb-5" id="champ_num">

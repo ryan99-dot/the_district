@@ -223,9 +223,8 @@ footer i {
     #reseaux_mobile {
         width: 100%;
     }
-
-
 }
+
 
 @media screen and (max-width:991px) {
     nav a {

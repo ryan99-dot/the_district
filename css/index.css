@@ -89,7 +89,6 @@ svg {
     background-position-x: 15%;
 }
 
-
 #categories a:hover {
     transform: scale(1.2);
     filter: grayscale(60%);
@@ -106,7 +105,6 @@ svg {
     color: #47B4D1;
     -webkit-text-stroke: 0.8px black;
 }
-
 
 .up {
     margin-bottom: 250px;
@@ -174,11 +172,9 @@ svg {
 }
 
 
-
 /**Media queries**/
 
 @media screen and (max-width:767px) {
-
     #champ_recherche {
         display: none;
     }
@@ -262,6 +258,4 @@ svg {
     #categories p {
         display: none;
     }
-
-
 }
