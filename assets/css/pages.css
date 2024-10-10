@@ -500,6 +500,7 @@ input[type=number] {
 #quantite {
     margin-right: 28px;
     margin-left: 28px;
+    width: 50px;
 }
 
 .moins {
@@ -989,5 +990,10 @@ h3 {
     #courgettes,
     #buffalo {
         min-width: 200px;
+    }
+
+    #quantite{
+        margin-right: 15px ;
+        margin-left: 15px ;
     }
 }

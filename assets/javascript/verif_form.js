@@ -1,13 +1,13 @@
 /*Vérification formulaire*/
 
-let filtre_caractere = new RegExp(/^[A-Za-zÀ-ÿ\s-]+$/);
+let filtre_caractere = new RegExp(/^[A-Za-zÀ-ÿ]+[\s-]*$/);
 let filtre_email = new RegExp(/^\S+@\S+\.\S+$/);
 let filtre_telephone = new RegExp(/^0\d{9}$/);
 let filtre_numero = new RegExp(/^\d+[\wÀ-ÿ\s-]*$/);
-let filtre_adresse = new RegExp(/^[\wÀ-ÿ\s-]+$/);
+let filtre_adresse = new RegExp(/^[\wÀ-ÿ]+[\s-]$/);
 let filtre_code_postal = new RegExp(/^\d{5}$/);
 
-function verif_commande() {
+function verif() {
   let prenom = document.getElementById("prenom").value;
   let nom = document.getElementById("nom").value;
   let email = document.getElementById("email").value;
@@ -28,6 +28,9 @@ function verif_commande() {
   if (filtre_telephone.test(telephone) == false) {
     alert("Entrez votre numéro de tépléhone");
   }
+  if (!demande || /^\s*$/.test(demande)){
+    alert("Ecivez votre demande");
+  }
   if (filtre_numero.test(numero) == false) {
     alert("Entrez le numéro de votre logement");
   }
@@ -39,28 +42,5 @@ function verif_commande() {
   }
   if (filtre_caractere.test(ville) == false) {
     alert("Entrez le nom de votre ville");
-  }
-}
-
-function verif_contact(){
-  let prenom = document.getElementById("prenom").value;
-  let nom = document.getElementById("nom").value;
-  let email = document.getElementById("email").value;
-  let telephone = document.getElementById("telephone").value;
-  let demande = document.getElementById("demande").value;
-  if (filtre_caractere.test(prenom) == false) {
-    alert("Entrez votre prénom");
-  }
-  if (filtre_caractere.test(nom) == false) {
-    alert("Entrez votre nom");
-  }
-  if (filtre_email.test(email) == false) {
-    alert("Entrez une adresse mail valide");
-  }
-  if (filtre_telephone.test(telephone) == false) {
-    alert("Entrez votre numéro de tépléhone");
-  }
-  if (!demande || /^\s*$/.test(demande)){
-    alert("Ecivez votre demande");
   }
 }

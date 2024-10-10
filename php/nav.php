@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg sticky-top d-flex justify-content-between p-0 shadow">
-    <img src="../images/the_district_brand/logo_transparent.png" alt="Logo The District" id="logo_desktop">
-    <img src="../images/the_district_brand/logo.png" alt="Logo The District" id="logo_mobile">
+    <img src="../assets/images/the_district_brand/logo_transparent.png" alt="Logo The District" id="logo_desktop">
+    <img src="../assets/images/the_district_brand/logo.png" alt="Logo The District" id="logo_mobile">
     <ul class="navbar-nav col justify-content-around">
 
         <?php $path = $_SERVER["PHP_SELF"];
@@ -10,18 +10,17 @@
                 <a href="index.php" class="nav-link text-white text-decoration-underline fs-4">Accueil</a>
             </li>
             <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
-                <a href="categorie.php" class="nav-link text-dark fs-4">Catégories</a>
+                <a href="php/categorie.php" class="nav-link text-dark fs-4">Catégories</a>
             </li>
             <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
-                <a href="plats1.php" class="nav-link text-dark fs-4">Plats</a>
+                <a href="php/plats1.php" class="nav-link text-dark fs-4">Plats</a>
             </li>
             <li class="nav-item d-flex justify-content-center align-items-center">
-                <a href="contact.php" class="nav-link text-dark fs-4">Contact</a>
+                <a href="php/contact.php" class="nav-link text-dark fs-4">Contact</a>
             </li>');
-        }
-        elseif ($file == "categorie.php") {
+        } elseif ($file == "categorie.php") {
             echo ('<li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
-                <a href="index.php" class="nav-link text-dark fs-4">Accueil</a>
+                <a href="../index.php" class="nav-link text-dark fs-4">Accueil</a>
             </li>
             <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
                 <a href="categorie.php" class="nav-link text-white text-decoration-underline fs-4">Catégories</a>
@@ -32,10 +31,9 @@
             <li class="nav-item d-flex justify-content-center align-items-center">
                 <a href="contact.php" class="nav-link text-dark fs-4">Contact</a>
             </li>');
-        }
-        elseif ($file == "contact.php") {
+        } elseif ($file == "contact.php") {
             echo ('<li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
-                <a href="index.php" class="nav-link text-dark fs-4">Accueil</a>
+                <a href="../index.php" class="nav-link text-dark fs-4">Accueil</a>
             </li>
             <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
                 <a href="categorie.php" class="nav-link text-dark fs-4">Catégories</a>
@@ -46,10 +44,9 @@
             <li class="nav-item d-flex justify-content-center align-items-center">
                 <a href="contact.php" class="nav-link text-white text-decoration-underline fs-4">Contact</a>
             </li>');
-        }
-        elseif ($file == "plats1.php" || $file == "plats2.php" || $file == "plats3.php" || $file == "plats4.php" || $file == "plats5.php") {
+        } elseif ($file == "plats1.php" || $file == "plats2.php" || $file == "plats3.php" || $file == "plats4.php" || $file == "plats5.php") {
             echo ('<li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
-                <a href="index.php" class="nav-link text-dark fs-4">Accueil</a>
+                <a href="../index.php" class="nav-link text-dark fs-4">Accueil</a>
             </li>
             <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
                 <a href="categorie.php" class="nav-link text-dark fs-4">Catégories</a>
@@ -60,10 +57,9 @@
             <li class="nav-item d-flex justify-content-center align-items-center">
                 <a href="contact.php" class="nav-link text-dark fs-4">Contact</a>
             </li>');
-        }
-        else {
+        } else {
             echo ('<li class="nav-item active border-end border-white d-flex justify-content-center align-items-center">
-                <a href="index.php" class="nav-link text-dark fs-4">Accueil</a>
+                <a href="../index.php" class="nav-link text-dark fs-4">Accueil</a>
             </li>
             <li class="nav-item border-end border-white d-flex justify-content-center align-items-center">
                 <a href="categorie.php" class="nav-link text-dark fs-4">Catégories</a>
@@ -78,54 +74,85 @@
         ?>
 
     </ul>
-    <a href="commande.php">
-        <img id="img_nav" src="../images/bg_rd.png" alt="Plusieurs plats sur fond bleu">
+    <?php
+    if ($file == "index.php") {
+        echo ('<a href="php/commande.php">');
+    }
+    else{
+        echo ('<a href="commande.php">');
+    }
+    ?>
+        <img id="img_nav" src="../assets/images/bg_rd.png" alt="Plusieurs plats sur fond bleu">
     </a>
 
     <div id="mySidenav" class="sidenav">
         <div class="d-flex justify-content-between align-items-center mx-5">
-            <a href="commande.php">
-                <i class="fa-solid fa-basket-shopping fs-1"></i>
-            </a>
-            <a id="closeBtn" href="#" class="close">×</a>
+            <?php
+            if ($file == "index.php") {
+                echo ('<a href="php/commande.php">
+                    <i class="fa-solid fa-basket-shopping fs-1"></i>
+                </a>
+                <a id="closeBtn" href="#" class="close">×</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.php">Accueil</a>
+                </li>
+                <li>
+                    <a href="php/categorie.php">Catégories</a>
+                </li>
+                <li>
+                    <a href="php/plats1.php">Plats</a>
+                </li>
+                <li>
+                    <a href="php/contact.php">Contact</a>
+                </li>
+            </ul>');
+            } else {
+                echo ('<a href="commande.php">
+                    <i class="fa-solid fa-basket-shopping fs-1"></i>
+                </a>
+                <a id="closeBtn" href="#" class="close">×</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="../index.php">Accueil</a>
+                </li>
+                <li>
+                    <a href="categorie.php">Catégories</a>
+                </li>
+                <li>
+                    <a href="plats1.php">Plats</a>
+                </li>
+                <li>
+                    <a href="contact.php">Contact</a>
+                </li>
+            </ul>');
+            }
+            ?>
+            <div id="reseaux_mobile" class="d-flex justify-content-around mt-4">
+                <a href="#" class="text-decoration-none">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="text-decoration-none">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
         </div>
-        <ul>
-            <li>
-                <a href="index.php">Accueil</a>
-            </li>
-            <li>
-                <a href="categorie.php">Catégories</a>
-            </li>
-            <li>
-                <a href="plats1.php">Plats</a>
-            </li>
-            <li>
-                <a href="contact.php">Contact</a>
-            </li>
-        </ul>
-        <div id="reseaux_mobile" class="d-flex justify-content-around mt-4">
-            <a href="#" class="text-decoration-none">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-                <i class="fa-brands fa-pinterest-p"></i>
-            </a>
-            <a href="#" class="text-decoration-none">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
-    </div>
-    <a href="#" id="openBtn">
-        <span class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-    </a>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
 </nav>
