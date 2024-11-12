@@ -24,7 +24,7 @@
     </header>
 
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../assets/images/food/lasagnes_viande.jpg" alt="Lasagnes" class="object-fit-cover">
+        <img src="../assets/images/food/lasagnes.jpg" alt="Lasagnes" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat">Lasagnes</p>
             <hr class="shadow">

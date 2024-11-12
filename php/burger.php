@@ -70,7 +70,7 @@
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../assets/images/food/cheesburger.jpg" alt="Cheeseburger" id="cheeseburger" class="object-fit-cover">
+        <img src="../assets/images/food/cheeseburger.jpg" alt="Cheeseburger" id="cheeseburger" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Cheeseburger</p>
             <hr class="shadow">

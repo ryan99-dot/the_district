@@ -61,7 +61,7 @@
                 <p class="align-items-center justify-content-center fs-1">Sandwich</p>
             </a>
             <a href="veggie.php" class="up" id="veggie">
-                <p class="align-items-center justify-content-center fs-1">Veggie</p>
+                <p class="align-items-center justify-content-ce nter fs-1">Veggie</p>
             </a>
             <a href="wrap.php" class="down" id="wrap">
                 <p class="align-items-center justify-content-center fs-1">Wrap</p>

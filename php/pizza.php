@@ -70,7 +70,7 @@
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../assets/images/food/pizza_salmon.png" alt="Pizza nordique" class="object-fit-cover">
+        <img src="../assets/images/food/pizza_nordique.png" alt="Pizza nordique" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Pizza nordique</p>
             <hr class="shadow">

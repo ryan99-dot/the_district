@@ -45,7 +45,7 @@
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../assets/images/food/pizza_salmon.png" alt="Pizza nordique" class="object-fit-cover">
+        <img src="../assets/images/food/pizza_nordique.png" alt="Pizza nordique" class="object-fit-cover">
         <div class="tout d-flex">
             <p class="titre_plat">Pizza nordique</p>
             <hr class="shadow">
@@ -66,7 +66,7 @@
     </div>
 
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../assets/images/food/salade_ceasar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
+        <img src="../assets/images/food/salade_caesar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
         <div class="tout d-flex">
             <p class="titre_plat">Salade Caesar</p>
             <hr class="shadow">

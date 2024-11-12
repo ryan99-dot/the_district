@@ -28,7 +28,7 @@
     </header>
 
     <div class="plat d-flex align-items-center justify-content-between">
-        <img src="../assets/images/food/salade_ceasar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
+        <img src="../assets/images/food/salade_caesar.jpg" alt="Salade Caesar" class="object-fit-cover" id="salade_caesar">
         <div class="tout d-flex">
             <p class="titre_plat text-center">Salade Caesar</p>
             <hr class="shadow">
