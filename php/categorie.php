@@ -1,89 +1,32 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php require_once(__DIR__ . "/DAO.php"); 
+$dao = new DAO();
+$cat = $dao->getCategories();
+require_once(__DIR__ . "/header.php");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catégorie - The District</title>
-    <script src="https://kit.fontawesome.com/694d251a11.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/all.css">
-    <link rel="stylesheet" href="../assets/css/pages.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Farsan&family=Geostar+Fill&family=Graduate&family=Griffy&family=Gwendolyn:wght@400;700&family=Indie+Flower&family=Julius+Sans+One&family=Love+Light&family=Mina:wght@400;700&family=Modern+Antiqua&family=Norican&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-</head>
+for ($i = 0; $i < count($cat); $i += 1): 
+    if ($i % 2 == 0): ?>
+        <a href="plats_categorie.php?id=<?= $cat[$i]->id ?>" class="text-decoration-none">
+            <div id="<?= $cat[$i]->libelle ?>" class="categorie_l d-flex mt-5">
+                <img src="../assets/images/category/<?= $cat[$i]->image ?>" alt="<?= $cat[$i]->libelle ?>" class="photo_cat object-fit-cover">
+                <p class="texte_cat d-flex justify-content-center align-items-center"><?= $cat[$i]->libelle ?></p>
+            </div>
+        </a>
+    <?php else: ?>
+        <a href="plats_categorie.php?id=<?= $cat[$i]->id ?>" class="text-decoration-none">
+            <div id="<?= $cat[$i]->libelle ?>" class="categorie_r d-flex mt-5">
+                <p class="texte_cat d-flex justify-content-center align-items-center"><?= $cat[$i]->libelle ?></p>
+                <img src="../assets/images/category/<?= $cat[$i]->image ?>" alt="<?= $cat[$i]->libelle ?>" class="photo_cat object-fit-cover">
+            </div>
+        </a>
+    <?php endif;
+endfor; ?>
 
-<body>
-    <header>
-        <?php require_once(__DIR__ . "/nav.php"); ?>
-        <div id="entete_leg"></div>
-        <div id="banniere_mobile"></div>
-    </header>
 
-    <a href="#" class="text-decoration-none">
-        <div id="asiatique" class="categorie_l d-flex mt-5">
-            <img src="../assets/images/category/asian_food_cat.jpg" alt="Asiatique" class="photo_cat object-fit-cover">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Asiatique</p>
-        </div>
-    </a>
+<div id="separation_leg" class="my-5"></div>
 
-    <a href="burger.php" class="text-decoration-none">
-        <div id="burger" class="categorie_r d-flex mt-5">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Burger</p>
-            <img src="../assets/images/category/burger_cat.jpg" alt="Burger" class="photo_cat object-fit-cover">
-        </div>
-    </a>
+<?php require_once(__DIR__ . "/footer.php"); ?>
 
-    <a href="pates.php" class="text-decoration-none">
-        <div id="pates" class="categorie_l d-flex mt-5">
-            <img src="../assets/images/category/pasta_cat.jpg" alt="Pâtes" class="photo_cat object-fit-cover">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Pâtes</p>
-        </div>
-    </a>
-
-    <a href="pizza.php" class="text-decoration-none">
-        <div id="pizza" class="categorie_r d-flex mt-5">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Pizza</p>
-            <img src="../assets/images/category/pizza_cat.jpg" alt="Pizza" class="photo_cat object-fit-cover">
-        </div>
-    </a>
-
-    <a href="salade.php" class="text-decoration-none">
-        <div id="salade" class="categorie_l d-flex mt-5">
-            <img src="../assets/images/category/salade_cat.jpg" alt="Salade" class="photo_cat object-fit-cover">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Salade</p>
-        </div>
-    </a>
-
-    <a href="sandwich.php" class="text-decoration-none">
-        <div id="sandwich" class="categorie_r d-flex mt-5">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Sandwich</p>
-            <img src="../assets/images/category/sandwich_cat.jpg" alt="Sandwich" class="photo_cat object-fit-cover">
-        </div>
-    </a>
-
-    <a href="veggie.php" class="text-decoration-none">
-        <div id="veggie" class="categorie_l d-flex mt-5">
-            <img src="../assets/images/category/veggie_cat.jpg" alt="Veggie" class="photo_cat object-fit-cover">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Veggie</p>
-        </div>
-    </a>
-
-    <a href="wrap.php" class="text-decoration-none">
-        <div id="wrap" class="categorie_r d-flex mt-5">
-            <p class="texte_cat d-flex justify-content-center align-items-center">Wrap</p>
-            <img src="../assets/images/category/wrap_cat.jpg" alt="Wrap" class="photo_cat object-fit-cover">
-        </div>1
-    </a>
-
-    <div id="separation_leg" class="my-5"></div>
-
-    <?php require_once(__DIR__ . "/footer.php"); ?>
-
-    <script src="../assets/javascript/menu_burger.js"></script>
+<script src="../assets/javascript/menu_burger.js"></script>
 </body>
 
 </html>
