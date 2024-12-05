@@ -17,10 +17,8 @@ foreach ($plats as $plat) : ?>
             <div class="des_com flex-column align-items-center">
                 <p class="description"><?= $plat->description ?></p>
                 <p class="description text-center"><?= $plat->prix ?>€</p>
-                <a href="commande.php?id=<?= $plat->id_plat ?>">
-                    <button class="commander border-0 rounded-2 px-5">Commander</button>
-                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
-                </a>
+                <a href="commande.php?id=<?= $plat->id_plat ?>" class="text-decoration-none text-dark commander border-0 rounded-2 px-5">Commander</a>
+                <a href="commande.php?id=<?= $plat->id_plat ?>" class="text-decoration-none text-dark commander_mobile border-0 rounded-circle px-2">+</a>
             </div>
         </div>
         <button class="chevron closed border-0 bg-transparent">
@@ -39,50 +37,38 @@ foreach ($plats as $plat) : ?>
         </defs>
         <ellipse cx="100" cy="38" rx="200" ry="45" fill="url('#monDegrade')" />
     </svg>
-    <button class="prec_desktop border-0 px-5 py-4 rounded-5">
-        <a href="?page=<?php if ($page == 1) {
-                            $p = 5;
-                        } else {
-                            $p = $page - 1;
-                        }
-                        echo $p; ?>" class="text-decoration-none text-dark">Précédent</a>
-    </button>
-    <button class="prec_mobile border-0 bg-transparent">
-        <a href="?page=<?php if ($page == 1) {
-                            $p = 5;
-                        } else {
-                            $p = $page - 1;
-                        }
-                        echo $p; ?>" class="text-decoration-none text-dark">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-    </button>
-    <button class="suiv_desktop border-0 px-5 py-4 rounded-5">
-        <a href="?page=<?php if ($page == 5) {
-                            $p = 1;
-                        } else {
-                            $p = $page + 1;
-                        }
-                        echo $p; ?>" class="text-decoration-none text-dark">Suivant</a>
-    </button>
-    <button class="suiv_mobile border-0 bg-transparent">
-        <a href="?page=<?php if ($page == 5) {
-                            $p = 1;
-                        } else {
-                            $p = $page + 1;
-                        }
-                        echo $p; ?>" class="text-decoration-none text-dark">
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-    </button>
+    <a href="?page=<?php if ($page == 1) {
+                        $p = 5;
+                    } else {
+                        $p = $page - 1;
+                    }
+                    echo $p; ?>" class="prec_desktop border-0 px-5 py-4 rounded-5 text-decoration-none text-dark text-center">Précédent</a>
+
+    <a href="?page=<?php if ($page == 1) {
+                        $p = 5;
+                    } else {
+                        $p = $page - 1;
+                    }
+                    echo $p; ?>" class="prec_mobile border-0 bg-transparent text-decoration-none text-dark text-center">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <a href="?page=<?php if ($page == 5) {
+                        $p = 1;
+                    } else {
+                        $p = $page + 1;
+                    }
+                    echo $p; ?>" class="suiv_desktop border-0 px-5 py-4 rounded-5 text-decoration-none text-dark text-center">Suivant</a>
+
+    <a href="?page=<?php if ($page == 5) {
+                        $p = 1;
+                    } else {
+                        $p = $page + 1;
+                    }
+                    echo $p; ?>" class="suiv_mobile border-0 bg-transparent text-decoration-none text-dark text-center">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
 </div>
 
-<div id="separation_ass"></div>
-
 <?php require_once(__DIR__ . "/footer.php"); ?>
-
-<script src="../assets/javascript/menu_burger.js"></script>
-<script src="../assets/javascript/plats.js"></script>
-</body>
-
-</html>

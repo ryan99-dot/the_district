@@ -85,9 +85,8 @@ fwrite($fichier, "\nTéléphone : " . $_POST["telephone"]);
 fwrite($fichier, "\nAdresse : " . $_POST["numero"] . $_POST["rue"] . ", " . $_POST["code_postal"] . $_POST["ville"]);
 ?>
 
-<div id="separation_tab"></div>
 
-<?php require_once(__DIR__ . "/footer.php");
+<?php
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -128,9 +127,5 @@ if ($mail) {
         echo "L'envoi de mail a échoué. L'erreur suivante s'est produite : ", $mail->ErrorInfo;
     }
 }
-?>
 
-<script src="../assets/javascript/menu_burger.js"></script>
-</body>
-
-</html>
+require_once(__DIR__ . "/footer.php"); ?>

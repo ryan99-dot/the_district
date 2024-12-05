@@ -33,7 +33,7 @@ nav li {
 }
 
 nav li a {
-    font-family: "Julius Sans One";
+    font-family: "Julius Sans One", sans-serif;
     -webkit-text-stroke: 0.5px black;
 }
 
@@ -77,42 +77,42 @@ footer i {
 }
 
 footer a{
-    font-family: 'Julius Sans One';
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 30px;
 }
 
 /*Polices d'écriture pour chaque cat de plats*/
 
 #Asiatique {
-    font-family: "Geostar Fill";
+    font-family: "Geostar Fill", sans-serif;
 }
 
 #Pâtes {
-    font-family: "Love Light";
+    font-family: "Love Light", sans-serif;
 }
 
 #Salade {
-    font-family: "Mina";
+    font-family: "Mina", sans-serif;
 }
 
 #Veggie {
-    font-family: "Norican";
+    font-family: "Norican", sans-serif;
 }
 
 #Burger {
-    font-family: "Graduate";
+    font-family: "Graduate", sans-serif;
 }
 
 #Pizza {
-    font-family: "Griffy";
+    font-family: "Griffy", sans-serif;
 }
 
 #Sandwich {
-    font-family: "Indie Flower";
+    font-family: "Indie Flower", sans-serif;
 }
 
 #Wrap {
-    font-family: "Nothing You Could Do";
+    font-family: "Nothing You Could Do", sans-serif;
 }
 
 /**Plat des pages plats.php**/
@@ -134,7 +134,7 @@ footer a{
 
 .titre_plat {
     font-size: 45px;
-    font-family: "Modern Antiqua";
+    font-family: "Modern Antiqua", sans-serif;
     color: white;
     vertical-align: middle;
     overflow-wrap: break-word;
@@ -146,7 +146,7 @@ footer a{
 
 .description {
     height: 100%;
-    font-family: "Farsan";
+    font-family: "Farsan", sans-serif;
     color: white;
     font-size: 40px;
 }
@@ -161,7 +161,7 @@ footer a{
 
 .commander {
     background-color: #47B4D1;
-    font-family: "Julius Sans One";
+    font-family: "Julius Sans One", sans-serif;
     font-size: 40px;
 }
 
@@ -296,7 +296,7 @@ hr {
     }
 
     #pol_mention{
-        font-family: 'Julius Sans One';
+        font-family: 'Julius Sans One', sans-serif;
     }
 
     /* Icône burger */
@@ -354,7 +354,7 @@ hr {
     .commander_mobile {
         display: flex;
         background-color: #970747;
-        font-family: "Modern Antiqua";
+        font-family: "Modern Antiqua", sans-serif;
         margin-left: 200px;
         margin-bottom: 5px;
         font-size: 45px;

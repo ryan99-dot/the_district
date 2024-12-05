@@ -19,14 +19,6 @@ for ($i = 0; $i < count($cat); $i += 1):
             </div>
         </a>
     <?php endif;
-endfor; ?>
+endfor;
 
-
-<div id="separation_leg" class="my-5"></div>
-
-<?php require_once(__DIR__ . "/footer.php"); ?>
-
-<script src="../assets/javascript/menu_burger.js"></script>
-</body>
-
-</html>
+require_once(__DIR__ . "/footer.php"); ?>

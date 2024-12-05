@@ -158,9 +158,9 @@ if ($file == "plats.php") {
         <!-- Entête des pages -->
         <?php if ($file == "index.php") : ?>
             <video id="background_video" autoplay loop muted>
-                <source src="../assets/videos/Food Reel FH Studio.mp4#t=3">
+                <source src="../assets/videos/entete_video.mp4#t=3">
             </video>
-            <form action="" method="get" id="champ_recherche" class="justify-content-center align-items-end">
+            <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="get" id="champ_recherche" class="justify-content-center align-items-end">
                 <label for="recherche"></label>
                 <input type="search" id="recherche" name="recherche" placeholder="Recherche..." class="border-0 rounded-5 text-center position-relative fs-4">
             </form>
@@ -215,17 +215,20 @@ if ($file == "plats.php") {
         <?php if ($file == "contact.php") : ?>
             <div id="entete_contact">
                 <h1>Contact</h1>
-            <?php elseif ($file == "plats_categorie.php") : ?>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div id="entete_<?= $plats[0]->nom_cat ?>" class="rounded-bottom-5 shadow"></div>
-                    <h1 id="<?= $plats[0]->nom_cat ?>" class="z-3 position-absolute"><?= $plats[0]->nom_cat ?></h1>
-                </div>
-            <?php elseif ($file == "politique_de_confidentialite.php") : ?>
-                <div id="entete_pol">
-                    <h1 class="text-center">Politique de confidentialité</h1>
-                <?php elseif ($file == "mentions_legales.php") : ?>
-                    <div id="entete_mentions">
-                        <h1 class="text-center">Mentions légales</h1>
-                    <?php endif; ?>
+            </div>
+        <?php elseif ($file == "plats_categorie.php") : ?>
+            <div class="d-flex justify-content-center align-items-center">
+                <div id="entete_<?= $plats[0]->nom_cat ?>" class="rounded-bottom-5 shadow"></div>
+                <h1 id="<?= $plats[0]->nom_cat ?>" class="z-3 position-absolute"><?= $plats[0]->nom_cat ?></h1>
+            </div>
+        <?php elseif ($file == "politique_de_confidentialite.php") : ?>
+            <div id="entete_pol">
+                <h1 class="text-center">Politique de confidentialité</h1>
+            </div>
+        <?php elseif ($file == "mentions_legales.php") : ?>
+            <div id="entete_mentions">
+                <h1 class="text-center">Mentions légales</h1>
+            </div>
+        <?php endif; ?>
 
     </header>

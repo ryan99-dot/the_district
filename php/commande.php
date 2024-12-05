@@ -76,12 +76,5 @@ require_once(__DIR__ . "/header.php"); ?>
         <i class="fa-regular fa-paper-plane"></i>
     </button>
 </form>
-<div id="separation_tab"></div>
+
 <?php require_once(__DIR__ . "/footer.php"); ?>
-
-<script src="../assets/javascript/menu_burger.js"></script>
-<script src="../assets/javascript/verif_form.js"></script>
-<script src="../assets/javascript/quantite_plat.js"></script>
-</body>
-
-</html>

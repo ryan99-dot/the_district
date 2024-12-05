@@ -18,6 +18,7 @@ class DAO
         $stmt = $this->pdo->query($query);
         return $stmt->fetchall(PDO::FETCH_OBJ);
     }
+
     // Récupérer 6 plats aléatoires (ex. plats du jour)
     public function getRandomPlats($limit = 6)
     {
@@ -31,6 +32,10 @@ class DAO
     // Recherche de plats et catégories
     public function searchPlats($searchTerm)
     {
+        // Validation de l'entrée de recherche
+        if (strlen($searchTerm) > 255) {
+            throw new Exception("Le terme de recherche est trop long");
+        }
         $query = "SELECT p.id AS id_plat, p.libelle, p.image, p.description, p.id_categorie, p.prix, c.libelle AS categorie FROM plat p JOIN categorie c ON p.id_categorie = c.id WHERE p.libelle LIKE :search OR c.libelle LIKE :search OR p.description LIKE :search";
         $stmt = $this->pdo->prepare($query);
         $searchTerm = '%' . $searchTerm . '%';
@@ -45,18 +50,17 @@ class DAO
         $query = "SELECT * FROM plat WHERE id=?";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute(array($id));
-        $plat = $stmt->fetch(PDO::FETCH_OBJ);
-        return $plat;
+        return $stmt->fetch(PDO::FETCH_OBJ);
     }
 
     /*Recupérer plats par catégorie*/
     public function getPLatByCat($idCat)
     {
-        $query = "SELECT p.id AS id_plat, p.libelle, p.description, p.prix, p.image, p.id_categorie, c.id, c.libelle AS nom_cat FROM plat AS p JOIN categorie AS c ON p.id_categorie = c.id WHERE p.id_categorie = ? ORDER BY p.libelle";
+        $query = "SELECT p.id AS id_plat, p.libelle, p.description, p.prix, p.image, p.id_categorie, c.id, c.libelle AS nom_cat FROM plat AS p JOIN categorie AS c ON p.id_categorie = c.id WHERE p.id_categorie = :idCat ORDER BY p.libelle";
         $stmt = $this->pdo->prepare($query);
-        $stmt->execute(array($idCat));
-        $plats = $stmt->fetchAll(PDO::FETCH_OBJ);
-        return $plats;
+        $stmt->bindParam(':idCat', $idCat, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
     /*Recupérer 4 plats*/
@@ -68,13 +72,17 @@ class DAO
         $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
         $stmt->bindValue(':debut', $debut, PDO::PARAM_INT);
         $stmt->execute();
-        $plats = $stmt->fetchAll(PDO::FETCH_OBJ);
-        return $plats;
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
 
     /*Recupération de l'id max d la table commande*/
     public function autoIncrement($tableName)
     {
+        // Vérifier que la table est valide (liste blanche)
+        $validTables = ['commande', 'plat', 'categorie']; // Exemples de tables valides
+        if (!in_array($tableName, $validTables)) {
+            throw new Exception("Table invalide");
+        }
         $query = "SELECT MAX(id) AS max_id FROM $tableName";
         $stmt = $this->pdo->query($query);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -101,4 +109,3 @@ class DAO
         ]);
     }
 }
-?>

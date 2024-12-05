@@ -12,13 +12,13 @@ if (!empty($_GET['recherche'])): ?>
         <h2 class="my-5" id="titre_recherche">Résultats pour <?= htmlspecialchars($_GET['recherche']) ?></h2>
         <svg viewBox="40 0 500 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <radialGradient id="monDegrade">
+                <radialGradient id="monDegrade1">
                     <stop offset="20%" stop-color="rgba(0,0,0,60%)" />
                     <stop offset="60%" stop-color="rgba(0,0,0,40%)" />
                     <stop offset="100%" stop-color="rgba(0,0,0,0%)" />
                 </radialGradient>
             </defs>
-            <ellipse cx="100" cy="50" rx="300" ry="35" fill="url('#monDegrade')" />
+            <ellipse cx="100" cy="50" rx="300" ry="35" fill="url('#monDegrade1')" />
         </svg>
         <div id="resultats_recherche" class="d-flex flex-wrap">
             <?php if (count($resultats) > 0):
@@ -34,10 +34,8 @@ if (!empty($_GET['recherche'])): ?>
                             <div class="des_com flex-column align-items-center">
                                 <p class="description"><?= $resultat->description ?></p>
                                 <p class="description text-center"><?= $resultat->prix ?>€</p>
-                                <a href="php/commande.php?id=<?= $resultat->id_plat ?>">
-                                    <button class="commander border-0 rounded-2 px-5">Commander</button>
-                                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
-                                </a>
+                                <a href="commande.php?id=<?= $resultat->id_plat ?>" class="text-decoration-none text-dark commander border-0 rounded-2 px-5">Commander</a>
+                                <a href="commande.php?id=<?= $resultat->id_plat ?>" class="text-decoration-none text-dark commander_mobile border-0 rounded-circle px-2">+</a>
                             </div>
                         </div>
                         <button class="chevron closed border-0 bg-transparent">
@@ -56,13 +54,13 @@ if (!empty($_GET['recherche'])): ?>
         <h2 class="my-5" id="titre_cat">Catégories</h2>
         <svg viewBox="40 0 500 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <radialGradient id="monDegrade">
+                <radialGradient id="monDegrade2">
                     <stop offset="20%" stop-color="rgba(0,0,0,60%)" />
                     <stop offset="60%" stop-color="rgba(0,0,0,40%)" />
                     <stop offset="100%" stop-color="rgba(0,0,0,0%)" />
                 </radialGradient>
             </defs>
-            <ellipse cx="100" cy="50" rx="200" ry="35" fill="url('#monDegrade')" />
+            <ellipse cx="100" cy="50" rx="200" ry="35" fill="url('#monDegrade2')" />
         </svg>
         <div id="categories" class="d-flex">
             <?php for ($i = 0; $i < count($cat); $i += 1): ?>
@@ -87,13 +85,13 @@ if (!empty($_GET['recherche'])): ?>
         <h2 class="my-5" id="titre_plat">Plats du jour</h2>
         <svg viewBox="40 0 500 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <radialGradient id="monDegrade">
+                <radialGradient id="monDegrade3">
                     <stop offset="20%" stop-color="rgba(0,0,0,60%)" />
                     <stop offset="60%" stop-color="rgba(0,0,0,40%)" />
                     <stop offset="100%" stop-color="rgba(0,0,0,0%)" />
                 </radialGradient>
             </defs>
-            <ellipse cx="100" cy="50" rx="200" ry="35" fill="url('#monDegrade')" />
+            <ellipse cx="100" cy="50" rx="200" ry="35" fill="url('#monDegrade3')" />
         </svg>
         <div id="plats" class="my-1">
             <?php for ($i = 0; $i < count($plat); $i += 1): ?>
@@ -106,12 +104,4 @@ if (!empty($_GET['recherche'])): ?>
 
 <?php endif; ?>
 
-<div id="separation_ass"></div>
-
 <?php require_once(__DIR__ . "/php/footer.php"); ?>
-
-<script src="assets/javascript/menu_burger.js"></script>
-<script src="assets/javascript/plats.js"></script>
-</body>
-
-</html>

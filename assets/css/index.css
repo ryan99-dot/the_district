@@ -5,7 +5,7 @@
     background-size: 310px;
     height: 200px;
     background-blend-mode: multiply;
-    font-family: "Farsan"
+    font-family: "Farsan", sans-serif;
 }
 
 #background_video {
@@ -36,7 +36,7 @@ h2::before {
 h2 {
     color: #47B4D1;
     position: absolute;
-    font-family: "Gwendolyn";
+    font-family: "Gwendolyn", sans-serif;
     font-size: 60px;
 }
 
@@ -215,7 +215,7 @@ svg {
     h2 {
         position: relative;
         color: #970747;
-        font-family: "Dekko";
+        font-family: "Dekko", sans-serif;
         font-size: 50px;
         text-align: center;
     }

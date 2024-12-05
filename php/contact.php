@@ -29,12 +29,5 @@
     </button>
 </form>
 
-<div id="separation_tab"></div>
 
 <?php require_once(__DIR__ . "/footer.php"); ?>
-
-<script src="../assets/javascript/menu_burger.js"></script>
-<script src="../assets/javascript/verif_form.js"></script>
-</body>
-
-</html>

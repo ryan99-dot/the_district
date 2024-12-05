@@ -1,6 +1,7 @@
 <?php
+include('config.php');
 try {
-    $db = new PDO('mysql:host=localhost;charset=utf8;dbname=the_district', 'grimbert', 'Haribo08');
+    $db = new PDO("mysql:host=" . DB_HOST . ";charset=utf8mb4;dbname=" . DB_NAME, DB_USER, DB_PASS);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
     echo "Erreur : " . $e->getMessage() . "<br>";

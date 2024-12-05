@@ -53,10 +53,5 @@ require_once(__DIR__ . "/header.php");
     </p>
 </div>
 
-<div id="separation_tab"></div>
 
 <?php require_once(__DIR__ . "/footer.php"); ?>
-
-<script src="../assets/javascript/menu_burger.js"></script>
-
-</body>

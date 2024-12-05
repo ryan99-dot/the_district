@@ -18,26 +18,13 @@ foreach ($plats as $plat) : ?>
             <div class="des_com flex-column align-items-center">
                 <p class="description text-center"><?= $plat->description ?></p>
                 <p class="description text-center"><?= $plat->prix ?>€</p>
-                <a href="commande.php?id=<?= $plat->id_plat ?>">
-                    <button class="commander border-0 rounded-2 px-5">Commander</button>
-                    <button class="commander_mobile border-0 rounded-circle px-2">+</button>
-                </a>
+                <a href="commande.php?id=<?= $plat->id_plat ?>" class="text-decoration-none text-dark commander border-0 rounded-2 px-5">Commander</a>
+                <a href="commande.php?id=<?= $plat->id_plat ?>" class="text-decoration-none text-dark commander_mobile border-0 rounded-circle px-2">+</a>
             </div>
         </div>
         <button class="chevron closed border-0 bg-transparent">
             <i class="fa-solid fa-chevron-left"></i>
         </button>
     </div>
-<?php endforeach; ?>
-
-<div id="separation_ass"></div>
-
-<?php require_once(__DIR__ . "/footer.php"); ?>
-
-<script src="../assets/javascript/menu_burger.js"></script>
-<script src="../assets/javascript/plats.js"></script>
-</body>
-
-
-
-</html>
+<?php endforeach; 
+require_once(__DIR__ . "/footer.php"); ?>
