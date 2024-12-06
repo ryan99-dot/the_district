@@ -16,31 +16,32 @@ function verif() {
   let rue = document.getElementById("rue").value;
   let code_postal = document.getElementById("code_postal").value;
   let ville = document.getElementById("ville").value;
-  if (filtre_caractere.test(prenom) == false) {
+  let demande = document.getElementById("demande").value;
+  if (!filtre_caractere.test(prenom)) {
     alert("Entrez votre prénom");
   }
-  if (filtre_caractere.test(nom) == false) {
+  if (!filtre_caractere.test(nom)) {
     alert("Entrez votre nom");
   }
-  if (filtre_email.test(email) == false) {
+  if (!filtre_email.test(email)) {
     alert("Entrez une adresse mail valide");
   }
-  if (filtre_telephone.test(telephone) == false) {
+  if (!filtre_telephone.test(telephone)) {
     alert("Entrez votre numéro de tépléhone");
   }
-  if (!demande || /^\s*$/.test(demande)){
+  if (/^\s*$/.test(demande)){
     alert("Ecivez votre demande");
   }
-  if (filtre_numero.test(numero) == false) {
+  if (!filtre_numero.test(numero)) {
     alert("Entrez le numéro de votre logement");
   }
-  if (filtre_adresse.test(rue) == false) {
+  if (!filtre_adresse.test(rue)) {
     alert("Entrez le nom de la rue de votre logement");
   }
-  if (filtre_code_postal.test(code_postal) == false) {
+  if (!filtre_code_postal.test(code_postal)) {
     alert("Entrez le code postal sur 5 chiffres");
   }
-  if (filtre_caractere.test(ville) == false) {
+  if (!filtre_caractere.test(ville)) {
     alert("Entrez le nom de votre ville");
   }
 }

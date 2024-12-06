@@ -1,6 +1,0 @@
-projectKey=the-district
-serverUrl=http://localhost:9000
-serverVersion=10.7.0.96327
-dashboardUrl=http://localhost:9000/dashboard?id=the-district
-ceTaskId=169cd67a-78bd-4355-8aec-76cca8e4fa88
-ceTaskUrl=http://localhost:9000/api/ce/task?id=169cd67a-78bd-4355-8aec-76cca8e4fa88

@@ -267,7 +267,6 @@ textarea {
     resize: none;
     background: radial-gradient(rgba(0, 0, 0, 20%), rgba(0, 0, 0, 5%), rgba(0, 0, 0, 0%));
     font-family: "Julius Sans One", sans-serif;
-    background: transparent;
     border: 0;
     border-top: solid 1px black;
 }
@@ -760,10 +759,6 @@ h3 {
 
     .texte_cat{
         font-size: 45px;
-    }
-
-    #Asiatique p{
-        font-size: 30px;
     }
 
     #pol{
