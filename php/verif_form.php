@@ -13,50 +13,56 @@ $verif_dem = !preg_match('/^\s*$/', $_POST["demande"]);
 $verif_ville = preg_match('/^[A-Za-zÀ-ÿ]+[\s-]*$/', $_POST["ville"]);
 
 if (!$verif_prenom) :
-    if ($file == "contact.php") : ?>
+    if ($file == "post_contact.php") : ?>
         <h3>Il faut un prénom valide pour soumettre le formulaire.</h3><br>
-    <?php elseif ($file == "commande.php") : ?>
+    <?php elseif ($file == "post_commande.php") : ?>
         <h3>Il faut un prénom valide pour confirmer la commande.</h3><br>
 <?php endif;
 endif; ?>
 
 <?php if (!$verif_nom) :
-    if ($file == "contact.php") : ?>
+    if ($file == "post_contact.php") : ?>
         <h3>Il faut un nom valide pour soumettre le formulaire.</h3><br>
-    <?php elseif ($file == "commande.php") : ?>
+    <?php elseif ($file == "post_commande.php") : ?>
         <h3>Il faut un nom valide pour confirmer la commande.</h3><br>
 <?php endif;
 endif; ?>
 
 <?php if (!$verif_mail) :
-    if ($file == "contact.php") :  ?>
+    if ($file == "post_contact.php") :  ?>
         <h3>Il faut un email valide pour soumettre le formulaire.</h3><br>
-    <?php elseif ($file == "commande.php") : ?>
+    <?php elseif ($file == "post_commande.php") : ?>
         <h3>Il faut un email valide pour confirmer la commande.</h3><br>
 <?php endif;
 endif; ?>
 
 <?php if (!$verif_tel) :
-    if ($file == "contact.php") :  ?>
+    if ($file == "post_contact.php") :  ?>
         <h3>Il faut un numéro de téléphone valide pour soumettre le formulaire.</h3><br>
-    <?php elseif ($file == "commande.php") : ?>
+    <?php elseif ($file == "post_commande.php") : ?>
         <h3>Il faut un numéro de téléphone valide pour confirmer la commande.</h3><br>
 <?php endif;
 endif; ?>
 
-<?php if (!$verif_dem) : ?>
+<?php if ($file == "post_contact.php" && !$verif_dem) : ?>
     <h3>Il faut remplir le champ de la demande pour soumettre le formulaire.</h3><br>
 <?php endif; ?>
 
-<?php if (!$verif_num || !$verif_rue || !$verif_cp || !$verif_ville) : ?>
+<?php if ($file == "comamnde.php" && (!$verif_num || !$verif_rue || !$verif_cp || !$verif_ville)) : ?>
     <h3>Il faut une adresse valide pour confirmer la commande.</h3><br>
 <?php endif; ?>
 
-<?php if (!$verif_prenom || !$verif_nom || !$verif_mail || !$verif_tel || !$verif_dem || !$verif_num || !$verif_rue || !$verif_cp || !$verif_ville) : ?>
-    <div class="d-flex justify-content-center mt-5">
-        <a href="<?= $file == 'post_contact.php' ? 'contact.php' : 'commande.php' ?>" class="text-decoration-none text-dark fs-2 border-0 rounded-4" id="retour_form"> <?php if ($file == "post_contact.php") : ?> Retour au formulaire <?php elseif ($file == "post_commande.php") : ?> Retour au panier <?php endif; ?> </a>
-    </div>
-<?php else : ?>
+<?php if (!$verif_prenom || !$verif_nom || !$verif_mail || !$verif_tel) :
+    if ($file == "post_contact.php" && !$verif_dem) : ?>
+        <div class="d-flex justify-content-center mt-5">
+            <a href="contact.php" class="text-decoration-none text-dark fs-2 border-0 rounded-4 text-center" id="retour_form">Retour au formulaire </a>
+        </div>
+    <?php elseif ($file == "post_commande.php" && (!$verif_num || !$verif_rue || !$verif_cp || !$verif_ville)) : ?>
+        <div class="d-flex justify-content-center mt-5">
+            <a href="commande.php" class="text-decoration-none text-dark fs-2 border-0 rounded-4 text-center" id="retour_form">Retour au panier </a>
+        </div>
+    <?php endif;
+else : ?>
     <div id="recap_form">
         <?php if ($file == "post_contact.php") : ?>
             <h2 class="my-5 text-center">Votre demande a été envoyée avec succès !</h2>
@@ -85,10 +91,9 @@ endif; ?>
 <?php date_default_timezone_set("Europe/Paris");
     $date = date("d-m-Y");
     $time = date("H-i-s");
-    if ($file == "contact.php") {
+    if ($file == "post_contact.php") {
         $nomFichier = "../assets/contact/Demande du " . $date . "-" . $time . ".txt";
-    }
-    elseif ($file == "commande.php"){
+    } elseif ($file == "post_commande.php") {
         $nomFichier = "../assets/commandes/Commande n" . ($maxId + 1) . "_" . $date . "-" . $time . ".txt";
     }
     $fichier = fopen($nomFichier, "c+b");
@@ -96,7 +101,7 @@ endif; ?>
         echo "Erreur lors de l'ouverture du fichier.";
         exit;
     }
-    if ($file =="post_commande.php") {
+    if ($file == "post_commande.php") {
         fwrite($fichier, "\nPlat : " . $plat->libelle);
         fwrite($fichier, "\nPrix total : " . $plat->prix * $quantite);
     }
@@ -104,11 +109,10 @@ endif; ?>
     fwrite($fichier, "\nNom : " . $_POST["nom"]);
     fwrite($fichier, "\nEmail : " . $_POST["email"]);
     fwrite($fichier, "\nTéléphone : " . $_POST["telephone"]);
-    if ($file == "post_contact.php"){
+    if ($file == "post_contact.php") {
         fwrite($fichier, "\nDemande : " . $_POST["demande"]);
-    }
-    elseif ($file == "post_commande.php") {
-    fwrite($fichier, "\nDemande : " . $_POST["demande"]);
+    } elseif ($file == "post_commande.php") {
+        fwrite($fichier, "\nAdresse : " . $_POST["numero"] . $_POST["rue"] . $_POST["code_postal"] . $_POST["ville"]);
     }
 endif;
 ?>
